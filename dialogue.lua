@@ -27,9 +27,11 @@ function Dialogue.Draw()
     local entry = Dialogue.Get(Dialogue.index) -- gets current dialogue line
 
     if entry then
-        local dialogueBox = Image["back"] -- temp_wind.png
+        local dialogueBox = Image["Textbox"] -- textbox.png
         local boxX, boxY = 50, 400 -- position of dialogue box
-        love.graphics.draw(dialogueBox, boxX, boxY)
+        if dialogueBox and love and love.graphics and love.graphics.draw then
+            love.graphics.draw(dialogueBox, boxX, boxY)
+        end
 
         local nameX, nameY = 98, 321
         local textX, textY = 93, 365
@@ -47,7 +49,9 @@ end
 
 -- handles input i think
 function Dialogue.Keypressed(key)
-    -- advances dialogue??
+        if Dialogue.index < #Dialogue.data then
+            Dialogue.index = Dialogue.index + 1
+        end
     if key == "space" then
         Dialogue.index = Dialogue.index + 1
     end
