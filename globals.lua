@@ -5,25 +5,31 @@ Gamestate = "Intro"
 Load_States = {
 	["Intro"] = function() end,
 	["Cutscene"] = function() end,
-	["Dialouge"] = function() end, -- TODO: Use functions from dialouge.lua
+	["Dialouge"] = nil,
 }
 
 Update_States = {
 	["Intro"] = function(dt) end,
 	["Cutscene"] = function (dt) end,
-	["Dialouge"] = function(dt) end, -- TODO: Use functions from dialouge.lua
+	["Dialouge"] = Dialogue.Updating,
+}
+
+Mousepressed_States = {
+	["Intro"] = function(x,y,button) end,
+	["Cutscene"] = function (x,y,button) end,
+	["Dialouge"] = nil,
 }
 
 Keypressed_States = {
 	["Intro"] = function(key) end,
 	["Cutscene"] = function (key) end,
-	["Dialouge"] = function(key) end, -- TODO: Use functions from dialouge.lua
+	["Dialouge"] = Dialogue.Keypressed,
 }
 
 Draw_States = {
 	["Intro"] = function() end,
 	["Cutscene"] = function () end,
-	["Dialouge"] = function() end, -- TODO: Use functions from dialouge.lua
+	["Dialouge"] = Dialogue.Draw,
 }
 
 
