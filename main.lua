@@ -1,4 +1,6 @@
 Dialogue = require("dialogue")
+--Compatibility = require("compatibility") -- TODO: someone work on this module
+--Timer = require("Timer") -- TODO: someone work on this module
 require("globals")
 
 function love.load()

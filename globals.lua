@@ -28,7 +28,12 @@ Keypressed_States = {
 
 Draw_States = {
 	["Intro"] = function() end,
-	["Cutscene"] = function () end,
+	["Cutscene"] = function ()
+		love.graphics.setBackgroundColor(255/255,50/255,255/255)
+		local img = Image.get("back")
+		love.graphics.draw(img,0,0)
+		love.graphics.print({{0,0,0},"Text"},55,345)
+	end,
 	["Dialouge"] = Dialogue.Draw,
 }
 
