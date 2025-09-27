@@ -1,17 +1,17 @@
-Gamestate = ""
+Gamestate = "Cutscene"
 
 Load_States = {
-	[""] = function() end,
+	["Cutscene"] = function() end,
 }
 
 Update_States = {
-	[""] = function (dt) end,
+	["Cutscene"] = function (dt) end,
 }
 
 Keypressed_States = {
-	[""] = function (key) end,
+	["Cutscene"] = function (key) end,
 }
 
 Draw_States = {
-	[""] = function () end,
+	["Cutscene"] = function () end,
 }
