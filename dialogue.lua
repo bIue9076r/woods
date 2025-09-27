@@ -23,10 +23,22 @@ end
 
 -- displays current dialogue line on screen
 function Dialogue.Draw()
-    local entry = Dialogue.Get(Dialogue.index)
+
+    local entry = Dialogue.Get(Dialogue.index) -- gets current dialogue line
+
     if entry then
-        -- kind of unsure about this
-        love.graphics.printf(entry.name .. ": " .. entry.text, 50, 400, 700)
+        local dialogueBox = Image["Textbox"] -- textbox.png
+        local boxX, boxY = 50, 400 -- position of dialogue box
+        if dialogueBox and love and love.graphics and love.graphics.draw then
+            love.graphics.draw(dialogueBox, boxX, boxY)
+        end
+
+        local nameX, nameY = 98, 321
+        local textX, textY = 93, 365
+        local textWidth = 429
+
+        love.graphics.print(entry.name, nameX, nameY)
+        love.graphics.printf(entry.text, textX, textY, textWidth, "left")
     end
 end
 
@@ -37,7 +49,9 @@ end
 
 -- handles input i think
 function Dialogue.Keypressed(key)
-    -- advances dialogue??
+        if Dialogue.index < #Dialogue.data then
+            Dialogue.index = Dialogue.index + 1
+        end
     if key == "space" then
         Dialogue.index = Dialogue.index + 1
     end
