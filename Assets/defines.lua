@@ -1,7 +1,12 @@
 -- Definitions of stuff/Assets
-love.graphics.setFont(love.graphics.newFont(24))
+
+--Fonts
+Font.new("Main","/Assets/font.ttf",16)
+love.graphics.setFont(Font.get("Main"))
 
 --Images
-Image.new("back", "/Assets/temp_wind.png")
+Image.new("Textbox", "/Assets/textbox.png")
+Image.new("Lorelai_1", "/Assets/Lorelai_1.png")
 
 --Sounds
+Sound.new("Back","/Assets/jazz-1.mp3","stream")
