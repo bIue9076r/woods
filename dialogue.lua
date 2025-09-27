@@ -23,15 +23,17 @@ end
 
 -- displays current dialogue line on screen
 function Dialogue.Draw()
+
     local entry = Dialogue.Get(Dialogue.index) -- gets current dialogue line
+
     if entry then
         local dialogueBox = Image["back"] -- temp_wind.png
         local boxX, boxY = 50, 400 -- position of dialogue box
         love.graphics.draw(dialogueBox, boxX, boxY)
 
-        local nameX, nameY = boxX + 20, boxY + 20
-        local textX, textY = boxX + 20, boxY + 60
-        local textWidth = 650
+        local nameX, nameY = 98, 321
+        local textX, textY = 93, 365
+        local textWidth = 429
 
         love.graphics.print(entry.name, nameX, nameY)
         love.graphics.printf(entry.text, textX, textY, textWidth, "left")
