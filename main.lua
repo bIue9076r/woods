@@ -2,7 +2,7 @@ jit.off()
 love.graphics.setDefaultFilter("nearest", "nearest")
 Dialogue = require("dialogue")
 --Compatibility = require("compatibility") -- TODO: someone work on this module
---Timer = require("Timer") -- TODO: someone work on this module
+Timer = require("Timer") -- TODO: someone work on this module
 require("globals")
 
 function love.load()
@@ -11,10 +11,14 @@ end
 
 function love.update(dt)
 	local f = Update_States[Gamestate] or Error_Update
+	if Timer.started then
+		Timer.update(dt)
+	end
 	f(dt)
 end
 
 function love.keypressed(key)
+	-- start the game with space 
 	if key == 'space' then 
 		Gamestate = "Cutscene"
 	end
@@ -28,6 +32,7 @@ function love.draw()
 end
 
 function love.mousepressed(x, y, button)
+	-- click on choice code here? 
 	local f = Mousepressed_States[Gamestate]
 	if f then f(x,y,button) end
 end
