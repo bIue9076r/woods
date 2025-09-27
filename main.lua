@@ -32,7 +32,7 @@ function love.draw()
 end
 
 function love.mousepressed(x, y, button)
-	-- click on choice code here? 
+	-- click on choice code here? or in specific states 
 	local f = Mousepressed_States[Gamestate]
 	if f then f(x,y,button) end
 end

@@ -8,6 +8,7 @@ Timer.started = false;
 
 function Timer.init() -- Call in globals.lua ?
     Timer.choice_time = Timer.choice_max
+    Timer.total_time = Timer.total_max 
 end
 
 function Timer.reset_choice()
