@@ -1,3 +1,5 @@
+jit.off()
+love.graphics.setDefaultFilter("nearest", "nearest")
 Dialogue = require("dialogue")
 --Compatibility = require("compatibility") -- TODO: someone work on this module
 --Timer = require("Timer") -- TODO: someone work on this module
