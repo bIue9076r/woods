@@ -1,48 +1,49 @@
 require("assets")
 require("Assets/defines")
+Button = require("button")
+Color_Lorelai = {214/255, 142/255, 162/255}
+Color_Douglass = {65/255, 139/255, 185/255}
+
+
+require("intro")
+require("cutscene")
+require("end")
+
 Gamestate = "Intro" -- Main Menu
 
 Load_States = {
-	["Intro"] = function() end,
-	["Cutscene"] = function() end,
+	["Intro"] = Intro_Load,
+	["Cutscene"] = Cutscene_Load,
 	["Dialouge"] = nil,
-	["End"] = function () end,
+	["End"] = End_Load,
 }
 
 Update_States = {
-	["Intro"] = function(dt) end,
-	["Cutscene"] = function (dt) end,
+	["Intro"] = Intro_Update,
+	["Cutscene"] = Cutscene_Update,
 	["Dialouge"] = Dialogue.Updating,
-	["End"] = function (dt) end,
+	["End"] = End_Update,
 }
 
 Mousepressed_States = {
-	["Intro"] = function(x,y,button) end,
-	["Cutscene"] = function (x,y,button) end,
+	["Intro"] = Intro_Mousepressed,
+	["Cutscene"] = Cutscene_Mousepressed,
 	["Dialouge"] = nil,
-	["End"] = function (x,y,button) end,
+	["End"] = End_Mousepressed,
 }
 
 Keypressed_States = {
-	["Intro"] = function(key) end,
-	["Cutscene"] = function (key) end,
+	["Intro"] = Intro_Keypressed,
+	["Cutscene"] = Cutscene_Keypressed,
 	["Dialouge"] = Dialogue.Keypressed,
-	["End"] = function (key) end,
+	["End"] = End_Keypressed,
 }
 
 Draw_States = {
-	["Intro"] = function() end,
-	["Cutscene"] = function ()
-		love.graphics.setBackgroundColor(255/255,50/255,255/255)
-		local img = Image.get("Textbox")
-		love.graphics.draw(img,0,0)
-		local x = love.mouse.getX()
-		local y = love.mouse.getY()
-		print(x,y)
-		love.graphics.print({{0,0,0},"Text"},x,y)
-	end,
+	["Intro"] = Intro_Draw,
+	["Cutscene"] = Cutscene_Draw,
 	["Dialouge"] = Dialogue.Draw,
-	["End"] = function () end,
+	["End"] = End_Draw,
 }
 
 
