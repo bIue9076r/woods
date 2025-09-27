@@ -1,4 +1,5 @@
-
+require("globals")
+require("dialogue")
 
 function love.load()
 	
