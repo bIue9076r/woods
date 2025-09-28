@@ -1,4 +1,4 @@
-local Response = {}
+Response = {}
 Response.data = {} -- stores all Response entries
 Response.index = "Start"
 Response.ticks = 0
@@ -17,61 +17,50 @@ function BadOption()
 end
 
 function Option_A()
-	Timer.reset_choice()
-	Play_Sfx("Lorelai_What")
 	local f = Response.data[Response.index].nexts[1] or BadOption
-	f()
 	Gamestate = "Dialogue"
+	f()
 end
 
 function Option_B()
-	Timer.reset_choice()
 	local f = Response.data[Response.index].nexts[2] or BadOption
-	f()
 	Gamestate = "Dialogue"
+	f()
 end
 
 function Option_C()
-	Timer.reset_choice()
 	local f = Response.data[Response.index].nexts[3] or BadOption
-	f()
 	Gamestate = "Dialogue"
+	f()
 end
 
 function Option_D()
-	Timer.reset_choice()
 	local f = Response.data[Response.index].nexts[4] or BadOption
-	f()
 	Gamestate = "Dialogue"
+	f()
 end
 
 function NoResponse()
 	local f = Response.data[Response.index].nexts[5] or Option_A
-	f()
 	Gamestate = "Dialogue"
+	f()
 end
 
--- adds a new Response entry to the system
--- char is character id
--- name is character name
--- text is the Response line
 function Response.New(index, char, mood, type, texts, nexts)
 	Response.data[index] = {
 		char = char or "Lorelai", mood = mood or 1, type = type or 0, texts = texts or {}, nexts = nexts or {},
 	}
 end
 
--- returns Response entry at given index
--- used to fetch current Response line
 function Response.Get(index)
 	return Response.data[index]
 end
 
 function Response.Load()
+	Timer.reset_choice()
 	Response.index = Dialogue.data[Dialogue.index].next
 end
 
--- displays current Response line on screen
 function Response.Draw()
 	local sound = Sound.get("cafe")
 	if sound and not sound:isPlaying() then
@@ -79,14 +68,14 @@ function Response.Draw()
 		sound:play()
 	end
 
-	local entry = Response.Get(Response.index) -- gets current Response line
+	local entry = Response.Get(Response.index)
 
 	if entry then
 		local img
 		img = Image.get("Inside_Background_"..entry.char)
 		love.graphics.draw(img,0,0)
 
-		img = Image.get(entry.char.."_"..Character.Mood)
+		img = Image.get(entry.char.."_"..entry.mood)
 		love.graphics.draw(img,0,0)
 
 		local n = math.ceil(6 * (Timer.choice_time/15))
@@ -94,8 +83,6 @@ function Response.Draw()
 		love.graphics.draw(img,0,0)
 
 		if entry.type == 1 then
-			local x,y = love.mouse.getPosition()
-
 			Response.Choice_2A:draw()
 			Response.Choice_2B:draw()
 
@@ -139,7 +126,7 @@ function Response.Keypressed(key)
 end
 
 function Response.Mousepressed(x,y,button)
-	if Response.type == 1 then
+	if Response.data[Response.index].type == 1 then
 		if Response.Choice_2A:click(x,y) then Option_A() end
 		if Response.Choice_2B:click(x,y) then Option_B() end
 	else
@@ -149,5 +136,3 @@ function Response.Mousepressed(x,y,button)
 		if Response.Choice_D:click(x,y) then Option_D() end
 	end
 end
-
-return Response

@@ -1,7 +1,8 @@
 -- Intro State
 -- Start of the game / Main Menu
 
-Button_1 = Button.new(200,300,100,50,"button","Red",10,10)
+Button_1 = Button.new(50,300,143,59,"button")
+Button_2 = Button.new(50,370,143,59,"quit")
 
 function Intro_Load()
 	
@@ -12,6 +13,7 @@ function Intro_Update(dt)
 	local y = love.mouse.getY()
 	
 	Button_1:focus(x,y)
+	Button_2:focus(x,y)
 end
 
 function Intro_Mousepressed(x,y,button)
@@ -22,6 +24,10 @@ function Intro_Mousepressed(x,y,button)
 		back_sound:stop()
 		Gamestate = "Cutscene"
 		sound = Sound.get("Yeep")
+	end
+
+	if Button_2:click(x,y,button) then
+		love.event.quit()
 	end
 
 	sound:setVolume(0.125 * SFX_Volume)
@@ -49,4 +55,5 @@ function Intro_Draw()
 	love.graphics.print({{0,0,0},"Title!"},350 + 10*math.cos(Rt/4),100 + 10*math.sin(-Rt/6),0,2)
 
 	Button_1:draw()
+	Button_2:draw()
 end

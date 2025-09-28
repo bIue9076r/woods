@@ -60,7 +60,8 @@ function Cutscene_Update(dt)
 			Text = "Yeah",
 		}
 	elseif fT == 14 then
-		Gamestate = "Dialogue"
+		Response.index = "Doug1"
+		Gamestate = "Response"
 		Timer.init()
 		Timer.started = true
 	end
@@ -72,7 +73,8 @@ end
 
 function Cutscene_Keypressed(key)
 	if key == "return" then
-		Gamestate = "Dialogue"
+		Response.index = "Doug1"
+		Gamestate = "Response"
 		Timer.init()
 		Timer.started = true
 	end

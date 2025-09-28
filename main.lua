@@ -12,6 +12,9 @@ function love.update(dt)
 		Timer.update(dt)
 	end
 	f(dt)
+	if dt < (1/30) then
+		love.timer.sleep(1/30 - dt)
+	end
 end
 
 function love.keypressed(key)

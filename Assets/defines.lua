@@ -9,10 +9,14 @@ Font.new("Main","/Assets/font.ttf",FONT_SIZE)
 love.graphics.setFont(Font.get("Main"))
 
 --Images
-Image.new("button", "/Assets/button_temp.png")
+Image.new("temp_button", "/Assets/button_temp.png")
+Image.new("Abstract", "/Assets/abstract.png")
+Image.new("button", "/Assets/Play.png")
+Image.new("settings", "/Assets/Settings.png")
+Image.new("quit", "/Assets/Quit.png")
 Image.new("Outside_Background", "/Assets/abstract.png")
 Image.new("Inside_Background_Lorelai", "/Assets/Inside_Background_Lorelai.png")
-Image.new("Inside_Background_Douglass", "/Assets/abstract.png")
+Image.new("Inside_Background_Douglass", "/Assets/Inside_Background_Douglass.png")
 
 Image.new("Textbox", "/Assets/textbox.png")
 Image.new("Lorelai_1", "/Assets/Lorelai_Default.png")

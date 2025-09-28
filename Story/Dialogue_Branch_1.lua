@@ -1,0 +1,11 @@
+Dialogue.New("Doug1_1_1", "Douglass", 1, "So uh, are- are you also a neuroscience major too? Or like pre-med?",60,"Doug1_1_2",true)
+Dialogue.New("Doug1_1_2", "Lorelai", 1, "Oh. No, haha. I'm a Radio Television Film major. I'm minoring in Chem.",60,"Doug2",true)
+
+Dialogue.New("Doug1_2_1", "Douglass", 1, "Do you like chemistry? Like uh.. you a big fan?",60,"Doug1_2_2",true)
+Dialogue.New("Doug1_2_2", "Lorelai", 1, "Honestly, yeah. I mean I'm really into make-up, so learning about chemistry-",60,"Doug1_2_3",true)
+Dialogue.New("Doug1_2_3", "Lorelai", 1, "Especially learning how to formulate shit, it's cool.",60,"Doug1_2_4",true)
+Dialogue.New("Doug1_2_4", "Douglass", 1, "Make-up is really cool. I mean uh- obviously I don't do make-up-",60,"Doug1_2_5",true)
+Dialogue.New("Doug1_2_5", "Douglass", 1, "But I like how creative it is, you know?",60,"Doug1_2_6",true)
+Dialogue.New("Doug1_2_6", "Lorelai", 1, "That's actually really cool. I would say I do a lot of creative stuff too.",60,"Doug1_2_7",true)
+Dialogue.New("Doug1_2_7", "Douglass", 1, "Really?",60,"Doug1_2_8",true)
+Dialogue.New("Doug1_2_8", "Lorelai", 1, "Yeah. I'm actually a Radio Television Film major. So I do a lot of SFX makeup for films.",60,"Doug2",true)

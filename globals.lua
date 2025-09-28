@@ -13,8 +13,8 @@ Colors = {
 	["Douglass"] = Color_Douglass,
 }
 
-Dialogue = require("dialogue")
-Response = require("response")
+require("dialogue")
+require("response")
 
 require("intro")
 require("cutscene")

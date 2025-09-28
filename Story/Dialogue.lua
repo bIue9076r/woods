@@ -1,2 +1,6 @@
-Dialogue.New("Start", "Douglass", "PLACEHOLDER: Hello there!")
-Dialogue.New("Next", "Lorelai", "PLACEHOLDER: Hi Douglass!")
+Likes_Chem = true
+
+require("Dialogue_Branch_1")
+require("Dialogue_Branch_2")
+require("Dialogue_Branch_3")
+require("Dialogue_Branch_4")
