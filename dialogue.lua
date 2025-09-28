@@ -17,7 +17,7 @@ function Dialogue.Get(index)
 end
 
 function Dialogue.Load()
-	Dialogue.ticks = 0
+	
 end
 
 -- displays current dialogue line on screen
@@ -51,10 +51,12 @@ end
 
 -- updating dialogue
 function Dialogue.Updating(dt)
-	local entry = Dialogue.Get(Dialogue.index)
-	Dialogue.ticks = Dialogue.ticks + 1
-	if Dialogue.ticks >= entry.duration then
-		Dialogue.ticks = 0
+	
+end
+
+function Dialogue.Mousepressed(x,y,button)
+	if button == 1 then
+		local entry = Dialogue.Get(Dialogue.index)
 		if not entry.dialogue then
 			Gamestate = "Response"
 			Response.Load()
@@ -66,5 +68,13 @@ end
 
 -- handles key input
 function Dialogue.Keypressed(key)
-
+	local entry = Dialogue.Get(Dialogue.index)
+	if key == "space" then
+		if not entry.dialogue then
+			Gamestate = "Response"
+			Response.Load()
+		else
+			Dialogue.index = entry.next
+		end
+	end
 end
