@@ -1,0 +1,1 @@
+Response.New("Start","Lorelai",1,0,{"You think you’ll taste just as good?", "What kind of coffee did you get?", "I just really like cappuccinos.", "Do you like coffee?"},{function () end, function () end, function () end, function () end,})

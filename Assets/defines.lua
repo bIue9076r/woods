@@ -1,11 +1,15 @@
 -- Definitions of stuff/Assets
 
+-- cursor
+love.mouse.setCursor(love.mouse.newCursor("/Assets/mouse2.png"))
+
 --Fonts
 FONT_SIZE = 16
 Font.new("Main","/Assets/font.ttf",FONT_SIZE)
 love.graphics.setFont(Font.get("Main"))
 
 --Images
+Image.new("button", "/Assets/button_temp.png")
 Image.new("Outside_Background", "/Assets/abstract.png")
 Image.new("Inside_Background_Lorelai", "/Assets/Inside_Background_Lorelai.png")
 Image.new("Inside_Background_Douglass", "/Assets/abstract.png")
@@ -17,13 +21,15 @@ Image.new("Lorelai_3", "/Assets/Lorelai_Love.png")
 Image.new("Lorelai_4", "/Assets/Lorelai_Angry.png")
 Image.new("Lorelai_5", "/Assets/Lorelai_Annoyed.png")
 Image.new("Lorelai_6", "/Assets/Lorelai_Anxious.png")
+Image.new("Lorelai_7", "/Assets/Lorelai_Flirt.png")
 
--- Image.new("Douglass_1", "/Assets/Douglass_Default.png")
--- Image.new("Douglass_2", "/Assets/Douglass_Talking.png")
--- Image.new("Douglass_3", "/Assets/Douglass_Love.png")
--- Image.new("Douglass_4", "/Assets/Douglass_Angry.png")
--- Image.new("Douglass_5", "/Assets/Douglass_Annoyed.png")
--- Image.new("Douglass_6", "/Assets/Douglass_Anxious.png")
+Image.new("Douglass_1", "/Assets/Douglass_Default.png")
+Image.new("Douglass_2", "/Assets/Douglass_Talking.png")
+Image.new("Douglass_3", "/Assets/Douglass_Love.png")
+Image.new("Douglass_4", "/Assets/Douglass_Embarassed.png")
+Image.new("Douglass_5", "/Assets/Douglass_Annoyed.png")
+Image.new("Douglass_6", "/Assets/Douglass_Anxious.png")
+Image.new("Douglass_7", "/Assets/Douglass_Blush.png")
 
 Image.new("Dialogue_A", "/Assets/Dialogue_A.png")
 Image.new("Dialogue_B", "/Assets/Dialogue_B.png")
@@ -42,6 +48,7 @@ Image.new("Timer_6", "/Assets/Timer_6.png")
 --Sounds
 Sound.new("Back","/Assets/jazz-1.mp3","stream")
 Sound.new("cafe","/Assets/cafe.mp3","stream")
+Sound.new("tick","/Assets/tick.mp3","stream")
 
 Sound.new("Yeep","/Assets/button.mp3","static")
 Sound.new("Nope","/Assets/bad_button.mp3","static")

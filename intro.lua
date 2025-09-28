@@ -1,7 +1,7 @@
 -- Intro State
 -- Start of the game / Main Menu
 
-Button_1 = Button.new(200,300,300,100,nil,"Red",10,10)
+Button_1 = Button.new(200,300,100,50,"button","Red",10,10)
 
 function Intro_Load()
 	

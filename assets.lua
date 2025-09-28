@@ -1,4 +1,5 @@
 Sound = {Contents = {}}
+Video = {Contents = {}}
 Image = {Contents = {}}
 Font = {Contents = {}}
 
@@ -8,6 +9,14 @@ end
 
 function Sound.get(Index)
 	return Sound.Contents[Index] or Sound.Contents[0]
+end
+
+function Video.new(Index, Path)
+	Video.Contents[Index] = love.graphics.newVideo(Path)
+end
+
+function Video.get(Index)
+	return Video.Contents[Index] or Video.Contents[0]
 end
 
 function Image.new(Index, Path)
