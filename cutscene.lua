@@ -67,7 +67,7 @@ function Cutscene_Update(dt)
 end
 
 function Cutscene_Mousepressed(x,y,button)
-	Play_Sfx("Nope")
+	Play_Sfx("Nope",0.125)
 end
 
 function Cutscene_Keypressed(key)

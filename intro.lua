@@ -16,7 +16,7 @@ end
 
 function Intro_Mousepressed(x,y,button)
 	local sound = Sound.get("Nope")
-	if Button:click(x,y,button) then
+	if Button_1:click(x,y,button) then
 		local back_sound = Sound.get("Back")
 		back_sound:seek(0)
 		back_sound:stop()

@@ -12,15 +12,17 @@ function Pop()
 	return r
 end
 
-function Play_Sfx(index)
+function Play_Sfx(index, volume)
+	volume = volume or 1
 	local sound = Sound.get(index)
-	sound:setVolume(0.125 * SFX_Volume)
+	sound:setVolume(volume * SFX_Volume)
 	sound:seek(0)
 	Put(sound)
 end
 
 function Draw_Sfx()
 	if #SFX > 1 then
-		Pop()
+		local s = Pop()
+		s:play()
 	end
 end

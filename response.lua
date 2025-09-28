@@ -18,6 +18,7 @@ end
 
 function Option_A()
 	Timer.reset_choice()
+	Play_Sfx("Lorelai_What")
 	local f = Response.data[Response.index].nexts[1] or BadOption
 	f()
 	Gamestate = "Dialogue"
@@ -106,20 +107,10 @@ function Response.Draw()
 			Response.Choice_C:draw()
 			Response.Choice_D:draw()
 
-			love.graphics.printf({{0,0,0},entry.texts[1]}, 120, 370, 195, "left")
-			love.graphics.printf({{0,0,0},entry.texts[2]}, 120, 432, 429, "left")
-			love.graphics.printf({{0,0,0},entry.texts[3]}, 320, 370, 195, "left")
-			love.graphics.printf({{0,0,0},entry.texts[4]}, 320, 432, 429, "left")
-
-			love.graphics.setColor(1,0,0)
-			love.graphics.rectangle("fill",120, 370, 195, 50)
-			love.graphics.setColor(0,1,0)
-			love.graphics.rectangle("fill",120, 432, 429, 50)
-			love.graphics.setColor(0,0,1)
-			love.graphics.rectangle("fill",320, 370, 195, 50)
-			love.graphics.setColor(1,1,0)
-			love.graphics.rectangle("fill",320, 432, 429, 50)
-			love.graphics.setColor(1,1,1)
+			love.graphics.printf({{0,0,0},entry.texts[1]}, 125, 363, 165, "left")
+			love.graphics.printf({{0,0,0},entry.texts[2]}, 125, 423, 165, "left")
+			love.graphics.printf({{0,0,0},entry.texts[3]}, 325, 363, 165, "left")
+			love.graphics.printf({{0,0,0},entry.texts[4]}, 325, 423, 165, "left")
 		end
 	end
 end
@@ -127,15 +118,18 @@ end
 -- updating Response
 function Response.Updating(dt)
 	Timer.update(dt)
+	local entry = Response.Get(Response.index)
 	local x,y = love.mouse.getPosition()
-	if Response.type == 1 then
-		Response.Choice_2A:focus(x,y)
-		Response.Choice_2B:focus(x,y)
-	else
-		Response.Choice_A:focus(x,y)
-		Response.Choice_B:focus(x,y)
-		Response.Choice_C:focus(x,y)
-		Response.Choice_D:focus(x,y)
+	if entry then
+		if entry.type == 1 then
+			Response.Choice_2A:focus(x,y)
+			Response.Choice_2B:focus(x,y)
+		else
+			Response.Choice_A:focus(x,y)
+			Response.Choice_B:focus(x,y)
+			Response.Choice_C:focus(x,y)
+			Response.Choice_D:focus(x,y)
+		end
 	end
 end
 
