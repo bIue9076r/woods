@@ -88,3 +88,20 @@ Response.New("Doug3","Douglass",1,0,{
 		Dialogue.index = "Doug3_1_4_1"
 	end,
 })
+
+Response.New("Doug3_1_1_2","Douglass",1,1,{
+	"No I meant your lips.",
+	"Yeah. Your coffee.",
+},{
+	function ()
+		if Compatibility.value >= 0 then
+			Dialogue.index = "Doug3_1_1_2_1_1"
+		else
+			Dialogue.index = "Doug3_1_1_2_2_1"
+		end
+	end,
+
+	function ()
+		Dialogue.index = "Doug3_1_1_2_3_1"
+	end,
+})

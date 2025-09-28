@@ -19,9 +19,6 @@ end
 function Intro_Mousepressed(x,y,button)
 	local sound = Sound.get("Nope")
 	if Button_1:click(x,y,button) then
-		local back_sound = Sound.get("Back")
-		back_sound:seek(0)
-		back_sound:stop()
 		Gamestate = "Cutscene"
 		sound = Sound.get("Yeep")
 	end
@@ -50,9 +47,9 @@ function Intro_Draw()
 	local img = Image.get("Outside_Background")
 	love.graphics.draw(img,0,0)
 
-	Rt = Rt or 1
-	Rt = Rt - 5 * love.timer.getDelta()
-	love.graphics.print({{0,0,0},"Title!"},350 + 10*math.cos(Rt/4),100 + 10*math.sin(-Rt/6),0,2)
+	--Rt = Rt or 1
+	--Rt = Rt - 5 * love.timer.getDelta()
+	--love.graphics.print({{0,0,0},"Title!"},350 + 10*math.cos(Rt/4),100 + 10*math.sin(-Rt/6),0,2)
 
 	Button_1:draw()
 	Button_2:draw()

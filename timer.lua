@@ -1,8 +1,11 @@
 local Timer = {}
 
 Timer.choice_time = 0		-- Time left for current choice
-Timer.choice_max = 15		-- Max time per choice (10 seconds)
+Timer.choice_max = 7		-- Max time per choice (10 seconds)
 Timer.started = false;
+
+Timer.global = 0;
+Timer.show = false
 
 function Timer.init() -- Call in globals.lua ?
 	Timer.choice_time = Timer.choice_max

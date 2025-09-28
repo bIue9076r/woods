@@ -5,7 +5,7 @@ Dialogue.New("Doug2_1_2", "Lorelai", 1, "My brother likes a lot of superhero shi
 Dialogue.New("Doug2_1_3", "Douglass", 1, "Your brother?",60,"Doug2_1_4",true)
 Dialogue.New("Doug2_1_4", "Lorelai", 1, "Yeah. He's five.",60,"Doug2_1_5",true)
 Dialogue.New("Doug2_1_5", "Douglass", 1, "Oh.",60,"Doug2_1_6",true)
-Dialogue.New("Doug2_1_6", "Lorelai", 1, "No but Superheroes are pretty cool. I mean they're all about justice. Seems cool.",60,"Doug3_1")
+Dialogue.New("Doug2_1_6", "Lorelai", 1, "No but Superheroes are pretty cool. I mean they're all about justice. Seems cool.",60,"Doug3_1",true)
 
 Dialogue.New("Doug2_2_1", "Douglass", 1, "So. What types of movies do you like?",60,"Doug2_2_2",true)
 Dialogue.New("Doug2_2_2", "Lorelai", 1, "You ever heard of the Godfather?",60,"Doug2_2_3",true)
@@ -17,25 +17,25 @@ Dialogue.New("Doug2_2_6", "Lorelai", 1, "You just have to see it for yourself.",
 Dialogue.New("Doug2_2_6_1_1", "Douglass", 1, "Maybe we could see it together some day? If you uh- don't mind watching it again.",60,"Doug2_2_6_1_2",true)
 Dialogue.New("Doug2_2_6_1_2", "Lorelai", 1, "Yeah! Honestly I would love to see what you think about it. ",60,"Doug2_2_6_1_3",true)
 Dialogue.New("Doug2_2_6_1_3", "Lorelai", 1, "I would definitely say it's a creative kind of movie. You know?",60,"Doug2_2_6_1_4",true)
-Dialogue.New("Doug2_2_6_1_4", "Douglass", 1, "..Yeah. Haha.",60,"Doug3_1")
+Dialogue.New("Doug2_2_6_1_4", "Douglass", 1, "..Yeah. Haha.",60,"Doug3_1",true)
 
 Dialogue.New("Doug2_2_6_2_1", "Douglass", 1, "Maybe we could see it together some day? If you uh- don't mind watching it again.",60,"Doug2_2_6_2_2",true)
 Dialogue.New("Doug2_2_6_2_2", "Lorelai", 1, "Oh. Yeah, uh. Maybe.",60,"Doug2_2_6_2_3",true)
-Dialogue.New("Doug2_2_6_2_3", "Douglass", 1, "..Alright.",60,"Doug3_1")
+Dialogue.New("Doug2_2_6_2_3", "Douglass", 1, "..Alright.",60,"Doug3_1",true)
 
 Dialogue.New("Doug2_3_1", "Douglass", 1, "You film a lot of stuff? What kind of things do you uh.. film?",60,"Doug2_3_2",true)
 Dialogue.New("Doug2_3_2", "Lorelai", 1, "Honestly it's kinda a lot of slice of life stuff I guess. But I do a little horror too.",60,"Doug2_3_3",true)
 Dialogue.New("Doug2_3_3", "Douglass", 1, "Horror? I can't really watch horror-",60,"Doug2_3_4",true)
-Dialogue.New("Doug2_3_4", "Lorelai", 1, "You scared?",60,"Doug3_1")
+Dialogue.New("Doug2_3_4", "Lorelai", 1, "You scared?",60,"Doug3_1",true)
 
 Dialogue.New("Doug2_3_4_1_1", "Douglass", 1, "Uh.. no. not at all. Just uh.. Most are just uh- too tame.. You know?",60,"Doug2_3_4_1_2",true)
-Dialogue.New("Doug2_3_4_1_2", "Lorelai", 1, "Uhm. I guess.",60,"Doug3_1")
+Dialogue.New("Doug2_3_4_1_2", "Lorelai", 1, "Uhm. I guess.",60,"Doug3_1",true)
 
 Dialogue.New("Doug2_3_4_2_1", "Douglass", 1, "Yeah.. yeah I uh- kinda am. Can't really handle gore that much.",60,"Doug2_3_4_2_2",true)
 Dialogue.New("Doug2_3_4_2_2", "Lorelai", 1, "Aw. That's kinda cute.",60,"Doug2_3_4_2_3",true)
 Dialogue.New("Doug2_3_4_2_3", "Douglass", 1, "..Really?",60,"Doug2_3_4_2_4",true)
 Dialogue.New("Doug2_3_4_2_4", "Lorelai", 7, "Least you admitted it, you know? Scared men are hot.",60,"Doug2_3_4_2_5",true)
-Dialogue.New("Doug2_3_4_2_5", "Douglass", 1, "..Uh... Yeah.",60,"Doug3_1")
+Dialogue.New("Doug2_3_4_2_5", "Douglass", 1, "..Uh... Yeah.",60,"Doug3_1",true)
 
 Dialogue.New("Doug2_4_1", "Douglass", 1, "So.. Why are you a chemistry minor?",60,"Doug2_4_2",true)
 Dialogue.New("Doug2_4_2", "Douglass", 1, "I mean it's pretty different from film.",60,"Doug2_4_3",true)
