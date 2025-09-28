@@ -14,7 +14,9 @@ function Cutscene_Mousepressed(x,y,button)
 end
 
 function Cutscene_Keypressed(key)
-
+	-- on next load
+	-- Timer.init()
+	-- Timer.started = true
 end
 
 function Cutscene_Draw()
