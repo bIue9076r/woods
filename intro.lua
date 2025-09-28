@@ -1,7 +1,7 @@
 -- Intro State
 -- Start of the game / Main Menu
 
-Button_1 = Button.new(200,300,300,100)
+Button_1 = Button.new(200,300,300,100,nil,"Red",10,10)
 
 function Intro_Load()
 	
@@ -15,11 +15,18 @@ function Intro_Update(dt)
 end
 
 function Intro_Mousepressed(x,y,button)
+	local sound = Sound.get("Nope")
 	if Button:click(x,y,button) then
+		local back_sound = Sound.get("Back")
 		back_sound:seek(0)
 		back_sound:stop()
 		Gamestate = "Cutscene"
+		sound = Sound.get("Yeep")
 	end
+
+	sound:setVolume(0.125 * SFX_Volume)
+	sound:seek(0)
+	sound:play()
 end
 
 function Intro_Keypressed(key)
@@ -29,6 +36,7 @@ end
 function Intro_Draw()
 	local back_sound = Sound.get("Back")
 	if back_sound and not (back_sound:isPlaying()) then
+		back_sound:setVolume(Music_Volume)
 		back_sound:seek(0)
 		back_sound:play()
 	end
@@ -38,7 +46,7 @@ function Intro_Draw()
 
 	Rt = Rt or 1
 	Rt = Rt - 5 * love.timer.getDelta()
-	love.graphics.print({{0,0,0},"Title!"},350 + 10*math.cos(Rt/4),100 + 10*math.sin(-Rt/6),0,2)--,0,2*math.sin(Rt) + 2)
+	love.graphics.print({{0,0,0},"Title!"},350 + 10*math.cos(Rt/4),100 + 10*math.sin(-Rt/6),0,2)
 
 	Button_1:draw()
 end

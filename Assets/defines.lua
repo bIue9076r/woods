@@ -1,11 +1,15 @@
 -- Definitions of stuff/Assets
 
 --Fonts
-Font.new("Main","/Assets/font.ttf",16)
+FONT_SIZE = 16
+Font.new("Main","/Assets/font.ttf",FONT_SIZE)
 love.graphics.setFont(Font.get("Main"))
 
 --Images
 Image.new("Outside_Background", "/Assets/abstract.png")
+Image.new("Inside_Background_Lorelai", "/Assets/Inside_Background_Lorelai.png")
+Image.new("Inside_Background_Douglass", "/Assets/abstract.png")
+
 Image.new("Textbox", "/Assets/textbox.png")
 Image.new("Lorelai_1", "/Assets/Lorelai_Default.png")
 Image.new("Lorelai_2", "/Assets/Lorelai_Talking.png")
@@ -37,3 +41,15 @@ Image.new("Timer_6", "/Assets/Timer_6.png")
 
 --Sounds
 Sound.new("Back","/Assets/jazz-1.mp3","stream")
+Sound.new("cafe","/Assets/cafe.mp3","stream")
+
+Sound.new("Yeep","/Assets/button.mp3","static")
+Sound.new("Nope","/Assets/bad_button.mp3","static")
+
+Sound.new("Applause","/Assets/applause-crowd.mp3","static")
+Sound.new("Shocked","/Assets/crowd-shocked.mp3","static")
+Sound.new("Douglass_Huh","/Assets/douglass-huh.mp3","static")
+Sound.new("Lorelai_Huh","/Assets/lorelai-huh.mp3","static")
+Sound.new("Lorelai_Gasp","/Assets/lorelai-gasp.mp3","static")
+Sound.new("Lorelai_What","/Assets/lorelai-what.mp3","static")
+Sound.new("Lorelai_Laughter","/Assets/lorelai-laughter.mp3","static")

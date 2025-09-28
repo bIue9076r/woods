@@ -1,15 +1,18 @@
 require("assets")
 require("Assets/defines")
 Button = require("button")
-Color_Lorelai = {214/255, 142/255, 162/255}
-Color_Douglass = {65/255, 139/255, 185/255}
-
+Color_Lorelai = {150/255, 54/255, 81/255}
+Color_Douglass = {53/255, 113/255, 151/255}
 
 require("intro")
 require("cutscene")
 require("end")
 
 Gamestate = "Intro" -- Main Menu
+Main_Volume = 1
+Music_Volume = 1
+SFX_Volume = 1
+love.audio.setVolume(Main_Volume)
 
 Load_States = {
 	["Intro"] = Intro_Load,

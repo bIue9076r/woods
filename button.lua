@@ -1,6 +1,6 @@
 Button = {
 	x = 200, y = 300, w = 300, h = 100, c = {1,1,1}, f = false, t = 0,
-	d = false, i = "",
+	d = false, i = "", s = "", sx = 0, sy = 0, sc = {0,0,0},
 }
 
 function Button:inX(x)
@@ -49,14 +49,18 @@ function Button:draw()
 		love.graphics.setColor(self.c[1] * d, self.c[2] * d, self.c[3] * d)
 		love.graphics.rectangle("fill",self.x + o,self.y + o,self.w - 2*o,self.h - 2*o)
 		love.graphics.setColor(1,1,1)
+
+		love.graphics.print({self.sc,self.s},self.x + self.sx + o, self.y + self.sy + o)
 	end
 end
 
-function Button.new(x,y,w,h,i)
+function Button.new(x,y,w,h,i,s,sx,sy,sc)
 	local tbl = {
 		x = x or 0, y = y or 0, w = w or 10, h = h or 10, c = {1,1,1}, f = false, t = 0,
-		d = false, i = i or "",
+		d = false, i = i or nil, s = s or "", sx = sx or 0, sy = sy or 0, sc = sc or {0,0,0},
 	}
+
+	if tbl.i then tbl.d = true end
 
 	local mt = {
 		__index = Button,
