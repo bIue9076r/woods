@@ -64,6 +64,11 @@ end
 
 function Response.Get(index)
 	if index == "END" then
+		local sound = Sound.get("cafe")
+		if sound then
+			sound:seek(0)
+			sound:stop()
+		end
 		Gamestate = "End"
 		return nil
 	end

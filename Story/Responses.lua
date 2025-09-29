@@ -107,6 +107,21 @@ Response.New("Choice_6","Douglass",1,1,{
 })
 
 Response.New("Choice_7","Douglass",1,1,{
+	"Call out Doug's lie. (firm)",
+	"Call out Doug's lie. (flirt)",
+},{
+	function ()
+		Dialogue.index = "Tree_3_Green_5_Branch_1_1"
+		Compatibility.decrease(0.2)
+	end,
+
+	function ()
+		Dialogue.index = "Tree_3_Green_5_Branch_2_1"
+		Compatibility.increase(0.2)
+	end,
+})
+
+Response.New("Choice_1323","Douglass",1,1,{
 	"You seem impressed really easily.",
 	"I design a lot of clothes.",
 },{
