@@ -48,7 +48,7 @@ Update_States = {
 Mousepressed_States = {
 	["Intro"] = Intro_Mousepressed,
 	["Cutscene"] = Cutscene_Mousepressed,
-	["Dialogue"] = nil,
+	["Dialogue"] = Dialogue.Mousepressed,
 	["Response"] = Response.Mousepressed,
 	["End"] = End_Mousepressed,
 }

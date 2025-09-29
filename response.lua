@@ -20,30 +20,35 @@ function Option_A()
 	local f = Response.data[Response.index].nexts[1] or BadOption
 	Gamestate = "Dialogue"
 	f()
+	Timer.started = false
 end
 
 function Option_B()
 	local f = Response.data[Response.index].nexts[2] or BadOption
 	Gamestate = "Dialogue"
 	f()
+	Timer.started = false
 end
 
 function Option_C()
 	local f = Response.data[Response.index].nexts[3] or BadOption
 	Gamestate = "Dialogue"
 	f()
+	Timer.started = false
 end
 
 function Option_D()
 	local f = Response.data[Response.index].nexts[4] or BadOption
 	Gamestate = "Dialogue"
 	f()
+	Timer.started = false
 end
 
 function NoResponse()
 	local f = Response.data[Response.index].nexts[5] or Option_A
 	Gamestate = "Dialogue"
 	f()
+	Timer.started = false
 end
 
 function Response.New(index, char, mood, type, texts, nexts)
@@ -57,6 +62,7 @@ function Response.Get(index)
 end
 
 function Response.Load()
+	Timer.started = true
 	Timer.reset_choice()
 	Response.index = Dialogue.data[Dialogue.index].next
 end
@@ -78,7 +84,7 @@ function Response.Draw()
 		img = Image.get(entry.char.."_"..entry.mood)
 		love.graphics.draw(img,0,0)
 
-		local n = math.ceil(6 * (Timer.choice_time/15))
+		local n = math.ceil(6 * (Timer.choice_time/7))
 		img = Image.get("Timer_"..n)
 		love.graphics.draw(img,0,0)
 
