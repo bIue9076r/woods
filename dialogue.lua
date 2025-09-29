@@ -46,6 +46,13 @@ function Dialogue.Draw()
 		local c = Colors[entry.name] or {0,0,0}
 		love.graphics.print({c,entry.name}, 98, 321)
 		love.graphics.printf({{0,0,0},entry.text}, 93, 365, 429, "left")
+	else
+		Gamestate = "End"
+		local sound = Sound.get("cafe")
+		if sound then
+			sound:seek(0)
+			sound:stop()
+		end
 	end
 end
 

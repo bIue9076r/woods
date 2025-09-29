@@ -3,7 +3,7 @@ love.graphics.setDefaultFilter("nearest", "nearest")
 require("globals")
 
 function love.load()
-	Gamestate = "End"
+	
 end
 
 function love.update(dt)

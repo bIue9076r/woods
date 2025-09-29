@@ -16,8 +16,7 @@ String = [[
 Douglas and Lorelai are going on a quick coffee shop run together. Class is starting soon, and they don't have much time to talk. Make decisions for both Doug and Lorelai, and see if you can get them together (or break them apart) in five minutes!
 
 
-
-click anywhere to continue]]
+]]
 Pause_hold = false
 Blink_done = false
 
@@ -99,7 +98,7 @@ function Cutscene_Update(dt)
 		local back_sound = Sound.get("Back")
 		back_sound:seek(0)
 		back_sound:stop()
-		Response.index = "Doug1"
+		Response.index = "Choice_1"
 		Gamestate = "Response"
 		Timer.init()
 		Timer.started = true
@@ -120,7 +119,7 @@ function Cutscene_Keypressed(key)
 		local back_sound = Sound.get("Back")
 		back_sound:seek(0)
 		back_sound:stop()
-		Response.index = "Doug1"
+		Response.index = "Choice_1"
 		Gamestate = "Response"
 		Timer.init()
 		Timer.started = true

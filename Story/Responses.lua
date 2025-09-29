@@ -1,107 +1,138 @@
-Response.New("Doug1","Lorelai",1,1,{
+Response.New("Choice_1","Lorelai",1,1,{
 	"Are you majoring in neuroscience too?",
 	"Do you like chemistry?",
 },{
 	function ()
 		Likes_Chem = false
-		Dialogue.index = "Doug1_1_1"
+		Dialogue.index = "Tree_1_Red_1"
 	end,
 
 	function ()
-		Dialogue.index = "Doug1_2_1"
+		Dialogue.index = "Tree_1_Green_1"
 	end,
 })
 
-Response.New("Doug2","Lorelai",1,0,{
+Response.New("Choice_2","Lorelai",1,0,{
 	"I love PC movies.",
 	"What types of movies do you like?",
 	"Types of films you record?",
 	"Why are you a chemistry minor?",
 },{
 	function ()
-		Dialogue.index = "Doug2_1_1"
+		Dialogue.index = "Tree_2_Red_1"
 	end,
 
 	function ()
-		Dialogue.index = "Doug2_2_1"
+		Dialogue.index = "Tree_2_Green_1"
 	end,
 
 	function ()
-		Dialogue.index = "Doug2_3_1"
+		Dialogue.index = "Tree_2_Blue_1"
 	end,
 
 	function ()
-		Dialogue.index = "Doug2_4_1"
+		Dialogue.index = "Tree_2_Purple_1"
 	end,
 })
 
-Response.New("Doug2_2_6","Lorelai",1,1,{
+Response.New("Choice_3","Lorelai",1,1,{
 	"Sounds good.",
 	"We could see it together?",
 },{
 	function ()
-		Dialogue.index = "Doug2_2_6_1_1"
+		Dialogue.index = "Tree_3"
 	end,
 
 	function ()
 		if Likes_Chem then
-			Dialogue.index = "Doug2_2_6_2_1"
+			Dialogue.index = "Tree_2_Green_6_Branch_1_1"
 			Compatibility.increase(0.2)
 		else
-			Dialogue.index = "Doug2_2_6_2_2"
+			Dialogue.index = "Tree_2_Green_6_Branch_2_1"
 		end
 	end,
 })
 
-Response.New("Doug2_3_4","Lorelai",1,1,{
+Response.New("Choice_4","Lorelai",1,1,{
 	"Not at all. (lie)",
 	"Kinda",
 },{
 	function ()
-		Dialogue.index = "Doug2_3_4_1_1"
+		Dialogue.index = "Tree_2_Blue_Branch_1_1"
 	end,
 
 	function ()
-		Dialogue.index = "Doug2_3_4_2_1"
+		Dialogue.index = "Tree_2_Blue_Branch_2_1"
 	end,
 })
 
-Response.New("Doug3","Douglass",1,0,{
+Response.New("Choice_5","Douglass",1,0,{
 	"You think you’ll taste just as good?",
 	"What kind of coffee did you get?",
 	"I just really like cappuccinos.",
 	"Do you like coffee?",
 },{
 	function ()
-		Dialogue.index = "Doug3_1_1_1"
+		Dialogue.index = "Tree_3_Red_1"
 	end,
 
 	function ()
-		Dialogue.index = "Doug3_1_2_1"
+		Dialogue.index = "Tree_3_Green_1"
 	end,
 
 	function ()
-		Dialogue.index = "Doug3_1_3_1"
+		Dialogue.index = "Tree_3_Blue_1"
 	end,
 
 	function ()
-		Dialogue.index = "Doug3_1_4_1"
+		Dialogue.index = "Tree_3_Purple_1"
 	end,
 })
 
-Response.New("Doug3_1_1_2","Douglass",1,1,{
+Response.New("Choice_6","Douglass",1,1,{
 	"No I meant your lips.",
 	"Yeah. Your coffee.",
 },{
 	function ()
 		if Compatibility.value >= 0 then
-			Dialogue.index = "Doug3_1_1_2_1_1"
+			Dialogue.index = "Tree_3_Red_2_Branch_1_1"
 		else
-			Dialogue.index = "Doug3_1_1_2_2_1"
+			Dialogue.index = "Tree_3_Red_2_Branch_2_1"
 		end
 	end,
 
 	function ()
-		Dialogue.index = "Doug3_1_1_2_3_1"
+		Dialogue.index = "Tree_3_Red_2_Branch_3_1"
+	end,
+})
+
+Response.New("Choice_7","Douglass",1,1,{
+	"You seem impressed really easily.",
+	"I design a lot of clothes.",
+},{
+	function ()
+		Compatibility.decrease(0.2)
+		if Compatibility.value <= 0 then
+			Dialogue.index = "Bad_1"
+		else
+			if Compatibility.value >= 4 then
+				Dialogue.index = "Good_1"
+			else
+				Dialogue.index = "Neutral_1"
+			end
+		end
+	end,
+
+	function ()
+		Compatibility.increase(0.2)
+		if Compatibility.value <= 0 then
+			Dialogue.index = "Bad_1"
+		else
+			if Compatibility.value >= 4 then
+				Dialogue.index = "Good_1"
+			else
+				Dialogue.index = "Neutral_1"
+			end
+		end
 	end,
 })

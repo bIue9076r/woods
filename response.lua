@@ -3,6 +3,11 @@ Response.data = {} -- stores all Response entries
 Response.index = "Start"
 Response.ticks = 0
 
+Response.spect = {
+	["Lorelai"] = "Douglass",
+	["Douglass"] = "Lorelai",
+}
+
 Response.Choice_A = Button.new(100,350,200,62,"Dialogue_A",nil,nil,nil,nil,0,0,1.007)
 Response.Choice_B = Button.new(100,412,200,62,"Dialogue_B",nil,nil,nil,nil,0,0,1.007)
 Response.Choice_C = Button.new(300,350,200,62,"Dialogue_C",nil,nil,nil,nil,0,0,1.007)
@@ -58,6 +63,10 @@ function Response.New(index, char, mood, type, texts, nexts)
 end
 
 function Response.Get(index)
+	if index == "END" then
+		Gamestate = "End"
+		return nil
+	end
 	return Response.data[index]
 end
 
@@ -87,6 +96,9 @@ function Response.Draw()
 		local n = math.ceil(6 * (Timer.choice_time/7))
 		img = Image.get("Timer_"..n)
 		love.graphics.draw(img,0,0)
+
+		love.graphics.print({{0,0,0},"Playing as "..Response.spect[entry.char]},60,300)
+		love.graphics.print({{1,1,1},"Playing as "..Response.spect[entry.char]},61,301)
 
 		if entry.type == 1 then
 			Response.Choice_2A:draw()

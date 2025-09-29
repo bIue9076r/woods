@@ -49,7 +49,7 @@ function End_Load()
 end
 
 function End_Update(dt)
-	Scroll_T = Scroll_T + 10*dt
+	Scroll_T = Scroll_T + 2*dt
 
 	if Scroll_T >= 140 then
 		love.event.quit()
