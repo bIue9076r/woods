@@ -1,12 +1,15 @@
-Dialogue = {}
+local Dialogue = {}
 Dialogue.data = {} -- stores all dialogue entries
 Dialogue.index = "Start"
 Dialogue.ticks = 0
 
 -- adds a new dialogue entry to the system
-function Dialogue.New(index, name, mood, text, duration, next, dialogue)
+-- char is character id
+-- name is character name
+-- text is the dialogue line
+function Dialogue.New(index, name, text, duration, next)
 	Dialogue.data[index] = {
-		name = name or "", mood = mood or 1, text = text or "", duration = duration or 2, next = next or "", dialogue = dialogue or false
+		name = name or "", text = text or "", duration = duration or 1, next = next or "Start",
 	}
 end
 
@@ -32,10 +35,10 @@ function Dialogue.Draw()
 
 	if entry then
 		local img
-		img = Image.get("Inside_Background_"..entry.name)
+		img = Image.get("Inside_Background_"..Character.Char)
 		love.graphics.draw(img,0,0)
 
-		img = Image.get(entry.name.."_"..entry.mood)
+		img = Image.get(Character.Char.."_"..Character.Mood)
 		love.graphics.draw(img,0,0)
 
 		love.graphics.setColor(1,1,1,0.8)
@@ -51,16 +54,11 @@ end
 
 -- updating dialogue
 function Dialogue.Updating(dt)
-	local entry = Dialogue.Get(Dialogue.index)
-	Dialogue.ticks = Dialogue.ticks + 1
-	if Dialogue.ticks >= entry.duration then
+	Dialogue.ticks = Dialogue.ticks + (1 * dt)
+	if Dialogue.ticks >= Dialogue.data[Dialogue.index].duration then
 		Dialogue.ticks = 0
-		if not entry.dialogue then
-			Gamestate = "Response"
-			Response.Load()
-		else
-			Dialogue.index = entry.next
-		end
+		Gamestate = "Response"
+		Response.Load()
 	end
 end
 
@@ -68,3 +66,5 @@ end
 function Dialogue.Keypressed(key)
 
 end
+
+return Dialogue
