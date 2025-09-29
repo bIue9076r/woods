@@ -64,6 +64,7 @@ end
 
 function Response.Get(index)
 	if index == "END" then
+		Timer.started = false
 		local sound = Sound.get("cafe")
 		if sound then
 			sound:seek(0)
