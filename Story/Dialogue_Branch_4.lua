@@ -2,7 +2,7 @@ Dialogue.New("Doug4_1_1", "Douglass", 1, "Oh! Oh I didn't mention this before ye
 Dialogue.New("Doug4_1_2", "Douglass", 1, "I really like the outfit you have on.", 60, "Doug4_1_3", true)
 Dialogue.New("Doug4_1_3", "Douglass", 1, "It's uh- unique. In a good way.", 60, "Doug4_1_4", true)
 Dialogue.New("Doug4_1_4", "Lorelai", 1, "Yeah? I actually made it myself.", 60, "Doug4_1_5", true)
-Dialogue.New("Doug4_1_5", "Douglass", 1, "Seriously? That's like- really really impressive.", 60, "Doug4")
+Dialogue.New("Doug4_1_5", "Douglass", 1, "Seriously? That's like- really really impressive.", 60, "Doug4_1_5")
 
 Dialogue.New("Doug4_2_1", "Lorelai", 1, "Are you just impressed with like.. anything?", 60, "Doug4_2_2", true)
 Dialogue.New("Doug4_2_2", "Douglass", 1, "..What?", 60, "Doug4_2_3", true)
@@ -14,7 +14,7 @@ Dialogue.New("Doug4_2_6", "Douglass", 1, "Is uh.. that a good thing?", 60, "Doug
 Dialogue.New("Doug4_2_6_1_1", "Lorelai", 1, "Yeah.", 60, "Doug4_2_6_1_2", true)
 Dialogue.New("Doug4_2_6_1_2", "Douglass", 1, "Uh.. that's- that's good. I guess.", 60, "Doug4_2_6_1_3", true)
 Dialogue.New("Doug4_2_6_1_3", "Lorelai", 1, "It is.", 60, "Doug4_2_6_1_4", true)
-Dialogue.New("Doug4_2_6_1_4", "Douglass", 1, "...", 60, "Doug5_1")
+Dialogue.New("Doug4_2_6_1_4", "Douglass", 1, "...", 60, "Doug5_1_1")
 
 Dialogue.New("Doug4_2_6_2_1", "Lorelai", 1, "Hell no.", 60, "Doug4_2_6_2_2", true)
 Dialogue.New("Doug4_2_6_2_2", "Douglass", 1, "Oh. Uh. I'm.. I'm sorry.", 60, "Doug4_2_6_2_3", true)
@@ -26,11 +26,11 @@ Dialogue.New("Doug4_2_6_2_3_1_1_1", "Douglass", 1, "What's wrong with you?!", 60
 Dialogue.New("Doug4_2_6_2_3_1_1_2", "Lorelai", 1, "Wow. Calm down.", 60, "Doug4_2_6_2_3_1_1_3", true)
 Dialogue.New("Doug4_2_6_2_3_1_1_3", "Douglass", 1, "Wh- I just- What are you talking about?!", 60, "Doug4_2_6_2_3_1_1_4", true)
 Dialogue.New("Doug4_2_6_2_3_1_1_4", "Lorelai", 1, "Just like- drink your frap or whatever you got, and calm down.", 60, "Doug4_2_6_2_3_1_1_5", true)
-Dialogue.New("Doug4_2_6_2_3_1_1_5", "Douglass", 1, "...", 60, "Doug5_1")
+Dialogue.New("Doug4_2_6_2_3_1_1_5", "Douglass", 1, "...", 60, "Doug5_1_1")
 
 Dialogue.New("Doug4_2_6_2_3_1_2_1", "Douglass", 1, "I uh- what.. What?", 60, "Doug4_2_6_2_3_1_2_2", true)
 Dialogue.New("Doug4_2_6_2_3_1_2_2", "Lorelai", 1, "Yeah.", 60, "Doug4_2_6_2_3_1_2_3", true)
-Dialogue.New("Doug4_2_6_2_3_1_2_3", "Douglass", 1, "Wow.", "Doug5_1")
+Dialogue.New("Doug4_2_6_2_3_1_2_3", "Douglass", 1, "Wow.", "Doug5_1_1")
 
 Dialogue.New("Doug4_3_1", "Lorelai", 1, "Yeah! I mean I make a lot of clothes myself.", 60, "Doug4_3_2", true)
 Dialogue.New("Doug4_3_2", "Lorelai", 1, "It's a good skill to have in film.", 60, "Doug4_3_3", true)
@@ -56,14 +56,14 @@ Dialogue.New("Doug4_3_4_1_7_1_8", "Douglass", 1, "It's a franchise. You capture 
 Dialogue.New("Doug4_3_4_1_7_1_9", "Lorelai", 1, "That doesn't sound very animal friendly.", 60, "Doug4_3_4_1_7_1_10", true)
 Dialogue.New("Doug4_3_4_1_7_1_10", "Douglass", 1, "No- I mean-", 60, "Doug4_3_4_1_7_1_11", true)
 Dialogue.New("Doug4_3_4_1_7_1_11", "Lorelai", 1, "I'm joking. Tell me about it later.", 60, "Doug4_3_4_1_7_1_12", true)
-Dialogue.New("Doug4_3_4_1_7_1_12", "Douglass", 1, "..Alright.", 60, "Doug5_1")
+Dialogue.New("Doug4_3_4_1_7_1_12", "Douglass", 1, "..Alright.", 60, "Doug5_1_1")
 
 Dialogue.New("Doug4_3_4_1_7_2_1", "Lorelai", 1, "Is caring for your cat hard?", 60, "Doug4_3_4_1_7_2_2", true)
 Dialogue.New("Doug4_3_4_1_7_2_2", "Douglass", 1, "Well- I mean her's well behaved-", 60, "Doug4_3_4_1_7_2_3", true)
 Dialogue.New("Doug4_3_4_1_7_2_3", "Douglass", 1, "For the most part. Sometimes he scratches.", 60, "Doug4_3_4_1_7_2_4", true)
 Dialogue.New("Doug4_3_4_1_7_2_4", "Lorelai", 1, "Yeah. Some cats kinda do that.", 60, "Doug4_3_4_1_7_2_5", true)
 Dialogue.New("Doug4_3_4_1_7_2_5", "Douglass", 1, "He's cute enough that I just deal with it.", 60, "Doug4_3_4_1_7_2_6", true)
-Dialogue.New("Doug4_3_4_1_7_2_6", "Lorelai", 1, "And that's completely understandable.", 60, "Doug5_1")
+Dialogue.New("Doug4_3_4_1_7_2_6", "Lorelai", 1, "And that's completely understandable.", 60, "Doug5_1_1")
 
 Dialogue.New("Doug4_3_4_2_1", "Lorelai", 1, "I made a corset once.", 60, "Doug4_3_4_2_2", true)
 Dialogue.New("Doug4_3_4_2_2", "Lorelai", 1, "It was a little hard getting the cinching part right", 60, "Doug4_3_4_2_3", true)
@@ -75,7 +75,7 @@ Dialogue.New("Doug4_3_4_2_5_1_1", "Lorelai", 1, "I also made a lot of other clot
 Dialogue.New("Doug4_3_4_2_5_1_2", "Lorelai", 1, "Skirts, tops, dresses- it's a fun hobby.", 60, "Doug4_3_4_2_5_1_3", true)
 Dialogue.New("Doug4_3_4_2_5_1_3", "Douglass", 1, "Yeah. You seem to.. really like it.", 60, "Doug4_3_4_2_5_1_4", true)
 Dialogue.New("Doug4_3_4_2_5_1_4", "Lorelai", 1, "I do. It's fun designing things.", 60, "Doug4_3_4_2_5_1_5", true)
-Dialogue.New("Doug4_3_4_2_5_1_5", "Douglass", 1, "I can see what you mean.", 60, "Doug5_1")
+Dialogue.New("Doug4_3_4_2_5_1_5", "Douglass", 1, "I can see what you mean.", 60, "Doug5_1_1")
 
 Dialogue.New("Doug4_3_4_2_5_2_1", "Lorelai", 1, "You would look good in a corset Doug", 60, "Doug4_3_4_2_5_2_2", true)
 Dialogue.New("Doug4_3_4_2_5_2_2", "Douglass", 1, "Uh.. What- what are you talking about?", 60, "Doug4_3_4_2_5_2_3", true)
@@ -84,4 +84,4 @@ Dialogue.New("Doug4_3_4_2_5_2_4", "Douglass", 1, "What. What like corset- are yo
 Dialogue.New("Doug4_3_4_2_5_2_5", "Lorelai", 1, "Like any corset! Come on. Try one on later.", 60, "Doug4_3_4_2_5_2_6", true)
 Dialogue.New("Doug4_3_4_2_5_2_6", "Lorelai", 1, "I'll bring you one of mine or something", 60, "Doug4_3_4_2_5_2_7", true)
 Dialogue.New("Doug4_3_4_2_5_2_7", "Douglass", 1, "No I uh- I'll pass. Yeah. I'm good.", 60, "Doug4_3_4_2_5_2_8", true)
-Dialogue.New("Doug4_3_4_2_5_2_8", "Lorelai", 1, "Suit yourself", 60, "Doug5_1")
+Dialogue.New("Doug4_3_4_2_5_2_8", "Lorelai", 1, "Suit yourself", 60, "Doug5_1_1")
