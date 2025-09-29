@@ -84,4 +84,8 @@ Dialogue.New("Doug4_3_4_2_5_2_4", "Douglass", 2, "What. What like corset- are yo
 Dialogue.New("Doug4_3_4_2_5_2_5", "Lorelai", 2, "Like any corset! Come on. Try one on later.", 60, "Doug4_3_4_2_5_2_6", true)
 Dialogue.New("Doug4_3_4_2_5_2_6", "Lorelai", 7, "I'll bring you one of mine or something", 60, "Doug4_3_4_2_5_2_7", true)
 Dialogue.New("Doug4_3_4_2_5_2_7", "Douglass", 2, "No I uh- I'll pass. Yeah. I'm good.", 60, "Doug4_3_4_2_5_2_8", true)
+<<<<<<< Updated upstream
 Dialogue.New("Doug4_3_4_2_5_2_8", "Lorelai", 2, "Suit yourself", 60, "Doug5_1")
+=======
+Dialogue.New("Doug4_3_4_2_5_2_8", "Lorelai", 2, "Suit yourself", 60, "Doug5_1")
+>>>>>>> Stashed changes
