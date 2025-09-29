@@ -1,4 +1,5 @@
 local Dialogue = {}
+Dialogue = {}
 Dialogue.data = {} -- stores all dialogue entries
 Dialogue.index = "Start"
 Dialogue.ticks = 0
@@ -8,8 +9,10 @@ Dialogue.ticks = 0
 -- name is character name
 -- text is the dialogue line
 function Dialogue.New(index, name, text, duration, next)
+function Dialogue.New(index, name, mood, text, duration, next, dialogue)
 	Dialogue.data[index] = {
 		name = name or "", text = text or "", duration = duration or 1, next = next or "Start",
+		name = name or "", mood = mood or 1, text = text or "", duration = duration or 2, next = next or "", dialogue = dialogue or false
 	}
 end
 
@@ -36,9 +39,11 @@ function Dialogue.Draw()
 	if entry then
 		local img
 		img = Image.get("Inside_Background_"..Character.Char)
+		img = Image.get("Inside_Background_"..entry.name)
 		love.graphics.draw(img,0,0)
 
 		img = Image.get(Character.Char.."_"..Character.Mood)
+		img = Image.get(entry.name.."_"..entry.mood)
 		love.graphics.draw(img,0,0)
 
 		love.graphics.setColor(1,1,1,0.8)
@@ -81,5 +86,3 @@ function Dialogue.Keypressed(key)
 		end
 	end
 end
-
-return Dialogue

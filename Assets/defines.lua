@@ -54,6 +54,7 @@ Image.new("Timer_6", "/Assets/Timer_6.png")
 Sound.new("Back","/Assets/jazz-1.mp3","stream")
 Sound.new("cafe","/Assets/cafe.mp3","stream")
 Sound.new("tick","/Assets/tick.mp3","stream")
+Sound.new("End","/Assets/end.mp3","stream")
 
 Sound.new("Yeep","/Assets/button.mp3","static")
 Sound.new("Nope","/Assets/bad_button.mp3","static")
