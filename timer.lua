@@ -1,4 +1,4 @@
-local Timer = {}
+Timer = {}
 
 Timer.choice_time = 0		-- Time left for current choice
 Timer.choice_max = 7		-- Max time per choice (10 seconds)
@@ -25,5 +25,3 @@ function Timer.update(dt)
 		Timer.reset_choice()
 	end
 end
-
-return Timer

@@ -1,9 +1,9 @@
 require("assets")
 require("Assets/defines")
 require("sfx")
-Button = require("button")
+require("button")
 Compatibility = require("compatibility")
-Timer = require("Timer")
+require("timer")
 
 Color_Lorelai = {150/255, 54/255, 81/255}
 Color_Douglass = {53/255, 113/255, 151/255}

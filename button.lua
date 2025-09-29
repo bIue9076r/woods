@@ -72,5 +72,3 @@ function Button.new(x,y,w,h,i,s,sx,sy,sc,ix,iy,is)
 
 	return setmetatable(tbl,mt)
 end
-
-return Button

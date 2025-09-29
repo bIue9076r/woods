@@ -1,6 +1,6 @@
 function love.conf(t)
 	t.version = "11.5"
-    t.console = true
+    t.console = false
 	t.window.width = 640
 	t.window.height = 480
 	t.window.title = "Kairos Koffee"
