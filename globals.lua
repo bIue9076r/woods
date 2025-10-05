@@ -1,9 +1,10 @@
-require("assets")
+require("modules.assets")
 require("Assets/defines")
-require("sfx")
-require("button")
-Compatibility = require("compatibility")
-require("timer")
+require("modules.sfx")
+require("modules.button")
+Compatibility = require("modules.compatibility")
+require("modules.timer")
+require("modules.tree")
 
 Color_Lorelai = {150/255, 54/255, 81/255}
 Color_Douglass = {53/255, 113/255, 151/255}

@@ -12,9 +12,9 @@ function love.update(dt)
 		Timer.update(dt)
 	end
 	f(dt)
-	if dt < (1/30) then
-		love.timer.sleep(1/30 - dt)
-	end
+	--if dt < (1/30) then
+	--	love.timer.sleep(1/30 - dt)
+	--end
 
 	if Timer.global < 300 then
 		if not((Gamestate == "Intro") or (Gamestate == "Cutscene") or (Gamestate == "End")) then

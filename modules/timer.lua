@@ -20,8 +20,10 @@ function Timer.update(dt)
 	Timer.choice_time = Timer.choice_time - dt
 	-- Handle timeouts
 	if Timer.choice_time <= 0 then
-		NoResponse()
-		Compatibility.decrease(0.5)
+		if Gamestate == "Response" then
+			NoResponse()
+			Compatibility.decrease(0.5)
+		end
 		Timer.reset_choice()
 	end
 end

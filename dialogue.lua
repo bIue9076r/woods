@@ -3,6 +3,8 @@ Dialogue.data = {} -- stores all dialogue entries
 Dialogue.index = "Start"
 Dialogue.ticks = 0
 
+Dialogue.tree = Tree.new()
+
 -- adds a new dialogue entry to the system
 function Dialogue.New(index, name, mood, text, duration, next, dialogue)
 	Dialogue.data[index] = {
@@ -29,6 +31,8 @@ function Dialogue.Draw()
 	end
 
 	local entry = Dialogue.Get(Dialogue.index) -- gets current dialogue line
+	local _entry = Dialogue.tree:get()
+	print("Draw",_entry)
 
 	if entry then
 		local img
@@ -64,6 +68,9 @@ end
 function Dialogue.Mousepressed(x,y,button)
 	if button == 1 then
 		local entry = Dialogue.Get(Dialogue.index)
+		local _entry = Dialogue.tree:get()
+		print("Mouse",_entry)
+
 		if not entry.dialogue then
 			Gamestate = "Response"
 			Response.Load()
@@ -76,6 +83,9 @@ end
 -- handles key input
 function Dialogue.Keypressed(key)
 	local entry = Dialogue.Get(Dialogue.index)
+	local _entry = Dialogue.tree:get()
+	print("Key",_entry)
+
 	if key == "space" then
 		if not entry.dialogue then
 			Gamestate = "Response"
