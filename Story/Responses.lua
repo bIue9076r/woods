@@ -5,10 +5,12 @@ Response.New("Choice_1","Lorelai",1,1,{
 	function ()
 		Likes_Chem = false
 		Dialogue.index = "Tree_1_Red_1"
+		Dialogue.tree = Red_1
 	end,
 
 	function ()
 		Dialogue.index = "Tree_1_Green_1"
+		Dialogue.tree = Green_1
 	end,
 })
 

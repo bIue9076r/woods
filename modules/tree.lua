@@ -21,13 +21,13 @@ end
 
 Tree = {}
 Tree.stems = {}
-Tree.next = "END"
+Tree.link = "END"
 Tree.index = 1
 
-function Tree.new(stems,next)
+function Tree.new(stems,link)
 	local tbl = {
 		stems = stems or {},
-		next = next or "END",
+		link = link or "END",
 	}
 
 	local mt = {
@@ -40,7 +40,7 @@ end
 function Tree:next()
 	self.index = self.index + 1
 	if self.index > #self.stems then
-		return self.next
+		return self.link
 	end
 end
 

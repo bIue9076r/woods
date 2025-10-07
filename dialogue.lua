@@ -32,7 +32,13 @@ function Dialogue.Draw()
 
 	local entry = Dialogue.Get(Dialogue.index) -- gets current dialogue line
 	local _entry = Dialogue.tree:get()
-	print("Draw",_entry)
+	if _entry and not _Once then
+		print(_entry.string)
+		print(_entry.char)
+		print(_entry.mood)
+		print(_entry.sfx)
+		_Once = true
+	end
 
 	if entry then
 		local img
@@ -69,7 +75,11 @@ function Dialogue.Mousepressed(x,y,button)
 	if button == 1 then
 		local entry = Dialogue.Get(Dialogue.index)
 		local _entry = Dialogue.tree:get()
-		print("Mouse",_entry)
+		_Once = false
+		if _entry then
+			local r = Dialogue.tree:next()
+			print("Mouse",r)
+		end
 
 		if not entry.dialogue then
 			Gamestate = "Response"
@@ -84,7 +94,11 @@ end
 function Dialogue.Keypressed(key)
 	local entry = Dialogue.Get(Dialogue.index)
 	local _entry = Dialogue.tree:get()
-	print("Key",_entry)
+	_Once = false
+	if _entry then
+		local r = Dialogue.tree:next()
+		print("Key",r)
+	end
 
 	if key == "space" then
 		if not entry.dialogue then
