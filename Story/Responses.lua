@@ -153,3 +153,21 @@ Response.New("Choice_1323","Douglass",1,1,{
 		end
 	end,
 })
+
+
+Choice_1 = Branch.new("Lorelai",1,1,
+	{
+		"Are you majoring in neuroscience too?",
+		"Do you like chemistry?",
+	},
+	{
+		function ()
+			Likes_Chem = false
+			return Red_1
+		end,
+
+		function ()
+			return Green_1
+		end,
+	}
+)

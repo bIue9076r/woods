@@ -16,6 +16,8 @@ Response.Choice_D = Button.new(300,412,200,62,"Dialogue_D",nil,nil,nil,nil,0,0,1
 Response.Choice_2A = Button.new(100,350,200,125,"2Box_Dialogue_A",nil,nil,nil,nil,0,0,1.007)
 Response.Choice_2B = Button.new(300,350,200,125,"2Box_Dialogue_B",nil,nil,nil,nil,0,0,1.007)
 
+Response.Branch = Choice_1
+
 function BadOption()
 	Dialogue.index = "Start"
 	Play_Sfx("Lorelai_What")
@@ -90,6 +92,15 @@ function Response.Draw()
 	end
 
 	local entry = Response.Get(Response.index)
+	local _entry = Response.Branch
+
+	if _entry then
+		print(_entry.char)
+		print(_entry.mood)
+		print(_entry.type)
+		print(_entry.strings)
+		print(_entry.options)
+	end
 
 	if entry then
 		local img

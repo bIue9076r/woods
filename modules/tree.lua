@@ -51,13 +51,15 @@ end
 Branch = {}
 Branch.char = "Lorelai"
 Branch.mood = 1
+Branch.type = 0
 Branch.strings = {""}
 Branch.options = {function () end}
 
-function Branch.new(char,mood,strings,options)
+function Branch.new(char,mood,type,strings,options)
 	local tbl = {
 		char = char or "Lorelai",
 		mood = mood or 1,
+		type = type or 0,
 		strings = strings or {},
 		options = options or {},
 	}
