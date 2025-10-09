@@ -19,42 +19,43 @@ Response.Choice_2B = Button.new(300,350,200,125,"2Box_Dialogue_B",nil,nil,nil,ni
 Response.Branch = Choice_1
 
 function BadOption()
-	Dialogue.index = "Start"
+	--Dialogue.index = "Start"
+	Dialogue.tree = "END"
 	Play_Sfx("Lorelai_What")
 end
 
 function Option_A()
-	local f = Response.data[Response.index].nexts[1] or BadOption
+	local f = Response.Branch.options[1] or BadOption
 	Gamestate = "Dialogue"
-	f()
+	Dialogue.tree = f()
 	Timer.started = false
 end
 
 function Option_B()
-	local f = Response.data[Response.index].nexts[2] or BadOption
+	local f = Response.Branch.options[2] or BadOption
 	Gamestate = "Dialogue"
-	f()
+	Dialogue.tree = f()
 	Timer.started = false
 end
 
 function Option_C()
-	local f = Response.data[Response.index].nexts[3] or BadOption
+	local f = Response.Branch.options[3] or BadOption
 	Gamestate = "Dialogue"
-	f()
+	Dialogue.tree = f()
 	Timer.started = false
 end
 
 function Option_D()
-	local f = Response.data[Response.index].nexts[4] or BadOption
+	local f = Response.Branch.options[4] or BadOption
 	Gamestate = "Dialogue"
-	f()
+	Dialogue.tree = f()
 	Timer.started = false
 end
 
 function NoResponse()
-	local f = Response.data[Response.index].nexts[5] or Option_A
+	local f = Response.Branch.options[5] or Option_A
 	Gamestate = "Dialogue"
-	f()
+	Dialogue.tree = f()
 	Timer.started = false
 end
 
@@ -81,7 +82,16 @@ end
 function Response.Load()
 	Timer.started = true
 	Timer.reset_choice()
-	Response.index = Dialogue.data[Dialogue.index].next
+	Response.Branch = Dialogue.tree.link
+	if Response.Branch == "END" then
+		Timer.started = false
+		local sound = Sound.get("cafe")
+		if sound then
+			sound:seek(0)
+			sound:stop()
+		end
+		Gamestate = "End"
+	end
 end
 
 function Response.Draw()
@@ -91,16 +101,8 @@ function Response.Draw()
 		sound:play()
 	end
 
-	local entry = Response.Get(Response.index)
-	local _entry = Response.Branch
-
-	if _entry then
-		print(_entry.char)
-		print(_entry.mood)
-		print(_entry.type)
-		print(_entry.strings)
-		print(_entry.options)
-	end
+	--local entry = Response.Get(Response.index)
+	local entry = Response.Branch
 
 	if entry then
 		local img
@@ -121,18 +123,18 @@ function Response.Draw()
 			Response.Choice_2A:draw()
 			Response.Choice_2B:draw()
 
-			love.graphics.printf({{0,0,0},entry.texts[1]}, 120, 370, 195, "left")
-			love.graphics.printf({{0,0,0},entry.texts[2]}, 320, 370, 195, "left")
+			love.graphics.printf({{0,0,0},entry.strings[1]}, 120, 370, 195, "left")
+			love.graphics.printf({{0,0,0},entry.strings[2]}, 320, 370, 195, "left")
 		else
 			Response.Choice_A:draw()
 			Response.Choice_B:draw()
 			Response.Choice_C:draw()
 			Response.Choice_D:draw()
 
-			love.graphics.printf({{0,0,0},entry.texts[1]}, 125, 363, 165, "left")
-			love.graphics.printf({{0,0,0},entry.texts[2]}, 125, 423, 165, "left")
-			love.graphics.printf({{0,0,0},entry.texts[3]}, 325, 363, 165, "left")
-			love.graphics.printf({{0,0,0},entry.texts[4]}, 325, 423, 165, "left")
+			love.graphics.printf({{0,0,0},entry.strings[1]}, 125, 363, 165, "left")
+			love.graphics.printf({{0,0,0},entry.strings[2]}, 125, 423, 165, "left")
+			love.graphics.printf({{0,0,0},entry.strings[3]}, 325, 363, 165, "left")
+			love.graphics.printf({{0,0,0},entry.strings[4]}, 325, 423, 165, "left")
 		end
 	end
 end

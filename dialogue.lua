@@ -30,22 +30,15 @@ function Dialogue.Draw()
 		sound:play()
 	end
 
-	local entry = Dialogue.Get(Dialogue.index) -- gets current dialogue line
-	local _entry = Dialogue.tree:get()
-	if _entry and not _Once then
-		print(_entry.string)
-		print(_entry.char)
-		print(_entry.mood)
-		print(_entry.sfx)
-		_Once = true
-	end
+	--local entry = Dialogue.Get(Dialogue.index) -- gets current dialogue line
+	local entry = Dialogue.tree:get()
 
 	if entry then
 		local img
-		img = Image.get("Inside_Background_"..entry.name)
+		img = Image.get("Inside_Background_"..entry.char)
 		love.graphics.draw(img,0,0)
 
-		img = Image.get(entry.name.."_"..entry.mood)
+		img = Image.get(entry.char.."_"..entry.mood)
 		love.graphics.draw(img,0,0)
 
 		love.graphics.setColor(1,1,1,0.8)
@@ -53,9 +46,9 @@ function Dialogue.Draw()
 		love.graphics.draw(img,0,0)
 		love.graphics.setColor(1,1,1)
 
-		local c = Colors[entry.name] or {0,0,0}
-		love.graphics.print({c,entry.name}, 98, 321)
-		love.graphics.printf({{0,0,0},entry.text}, 93, 365, 429, "left")
+		local c = Colors[entry.char] or {0,0,0}
+		love.graphics.print({c,entry.char}, 98, 321)
+		love.graphics.printf({{0,0,0},entry.string}, 93, 365, 429, "left")
 	else
 		Gamestate = "End"
 		local sound = Sound.get("cafe")
@@ -73,39 +66,25 @@ end
 
 function Dialogue.Mousepressed(x,y,button)
 	if button == 1 then
-		local entry = Dialogue.Get(Dialogue.index)
-		local _entry = Dialogue.tree:get()
-		_Once = false
-		if _entry then
-			local r = Dialogue.tree:next()
-			print("Mouse",r)
-		end
+		--local entry = Dialogue.Get(Dialogue.index)
 
-		if not entry.dialogue then
+		local link = Dialogue.tree:next()
+		if link then
 			Gamestate = "Response"
 			Response.Load()
-		else
-			Dialogue.index = entry.next
 		end
 	end
 end
 
 -- handles key input
 function Dialogue.Keypressed(key)
-	local entry = Dialogue.Get(Dialogue.index)
-	local _entry = Dialogue.tree:get()
-	_Once = false
-	if _entry then
-		local r = Dialogue.tree:next()
-		print("Key",r)
-	end
+	--local entry = Dialogue.Get(Dialogue.index)
 
 	if key == "space" then
-		if not entry.dialogue then
+		local link = Dialogue.tree:next()
+		if link then
 			Gamestate = "Response"
 			Response.Load()
-		else
-			Dialogue.index = entry.next
 		end
 	end
 end
