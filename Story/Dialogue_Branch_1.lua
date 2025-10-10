@@ -13,6 +13,7 @@ Dialogue.New("Tree_1_Green_8", "Lorelai", 2, "Yeah. I'm actually a Radio Televis
 Red_1 = Tree.new({
 	Stem.new("Douglass", 2, "So uh, are- are you also a neuroscience major too? Or like pre-med?", nil),
 	Stem.new("Lorelai", 6, "Oh. No, haha. I'm a Radio Television Film major. I'm minoring in Chem.", nil),
+	Stem.new("Douglass", 2, "Oh, really? Wow, that uh- that's pretty cool. I mean I watch a lot of movies. And films.", nil),
 }, nil)
 
 Green_1 = Tree.new({
@@ -24,4 +25,5 @@ Green_1 = Tree.new({
 	Stem.new("Lorelai", 2, "That's actually really cool. I would say I do a lot of creative stuff too.", nil),
 	Stem.new("Douglass", 2, "Really?", nil),
 	Stem.new("Lorelai", 2, "Yeah. I'm actually a Radio Television Film major. So I do a lot of SFX makeup for films.", nil),
+	Stem.new("Douglass", 2, "Oh, really? Wow, that uh- that's pretty cool. I mean I watch a lot of movies. And films.", nil),
 }, nil)

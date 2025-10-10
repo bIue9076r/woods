@@ -43,3 +43,37 @@ Dialogue.New("Tree_2_Purple_3", "Lorelai", 2, "Honestly I'm just really interest
 Dialogue.New("Tree_2_Purple_4", "Lorelai", 2, "And I feel like learning about how to formulate different types of special effects make up-",60,"Tree_2_Purple_5",true)
 Dialogue.New("Tree_2_Purple_5", "Lorelai", 3, "is just really cool to me. So in a way I feel like it's pretty similar.",60,"Tree_2_Purple_6",true)
 Dialogue.New("Tree_2_Purple_6", "Douglass", 2, "Oh, really? Wow, that uh- that's pretty cool. I mean I watch a lot of movies. And films.",60,"Tree_3",true)
+
+Red_2 = Tree.new({
+	Stem.new("Douglass", 2, "I watch a lot of PC movies. Like uh.. Puperman. And Patman- yeah. ", nil),
+	Stem.new("Lorelai", 2, "My brother likes a lot of superhero shit.", nil),
+	Stem.new("Douglass", 2, "Your brother?", nil),
+	Stem.new("Lorelai", 2, "Yeah. He's five.", nil),
+	Stem.new("Douglass", 2, "Oh.", nil),
+	Stem.new("Lorelai", 6, "No but Superheroes are pretty cool. I mean they're all about justice. Seems cool.", nil),
+}, nil)
+
+Green_2 = Tree.new({
+	Stem.new("Douglass", 2, "So. What types of movies do you like?", nil),
+	Stem.new("Lorelai", 2, "You ever heard of the Godfather?", nil),
+	Stem.new("Douglass", 2, "Uh.. no. I don't- probably not.", nil),
+	Stem.new("Lorelai", 3, "Well its cinematography is the best. Not even kidding.", nil),
+	Stem.new("Lorelai", 2, "They do a bunch of different scene and perspective changing, I mean-", nil),
+	Stem.new("Lorelai", 2, "You just have to see it for yourself.", nil)
+}, nil)
+
+Blue_2 = Tree.new({
+	Stem.new("Douglass", 2, "You film a lot of stuff? What kind of things do you uh.. film?", nil),
+	Stem.new("Lorelai", 2, "Honestly it's kinda a lot of slice of life stuff I guess. But I do a little horror too.", nil),
+	Stem.new("Douglass", 2, "Horror? I can't really watch horror-", nil),
+	Stem.new("Lorelai", 2, "You scared?", nil),
+}, nil)
+
+Purple_2 = Tree.new({
+	Stem.new("Douglass", 2, "So.. Why are you a chemistry minor?", nil),
+	Stem.new("Douglass", 2, "I mean it's pretty different from film.", nil),
+	Stem.new("Lorelai", 2, "Honestly I'm just really interested in SFX makeup.", nil),
+	Stem.new("Lorelai", 2, "And I feel like learning about how to formulate different types of special effects make up-", nil),
+	Stem.new("Lorelai", 3, "is just really cool to me. So in a way I feel like it's pretty similar.", nil),
+	Stem.new("Douglass", 2, "Oh, really? Wow, that uh- that's pretty cool. I mean I watch a lot of movies. And films.", nil),
+}, nil)
