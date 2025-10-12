@@ -99,6 +99,7 @@ function Cutscene_Update(dt)
 		back_sound:seek(0)
 		back_sound:stop()
 		Response.index = "Choice_1"
+		Response.Branch = Choice_1
 		Gamestate = "Response"
 		Timer.init()
 		Timer.started = true

@@ -21,8 +21,8 @@ require("intro")
 require("cutscene")
 require("end")
 
-require("Story.Dialogue")
 require("Story.Responses")
+require("Story.Dialogue")
 
 Gamestate = "Intro" -- Main Menu
 Main_Volume = 1

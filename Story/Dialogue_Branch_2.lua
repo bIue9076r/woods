@@ -59,7 +59,20 @@ Green_2 = Tree.new({
 	Stem.new("Douglass", 2, "Uh.. no. I don't- probably not.", nil),
 	Stem.new("Lorelai", 3, "Well its cinematography is the best. Not even kidding.", nil),
 	Stem.new("Lorelai", 2, "They do a bunch of different scene and perspective changing, I mean-", nil),
-	Stem.new("Lorelai", 2, "You just have to see it for yourself.", nil)
+	Stem.new("Lorelai", 2, "You just have to see it for yourself.", nil),
+}, nil)
+
+Green_2_Branch_1 = Tree.new({
+	Stem.new("Douglass", 2, "Maybe we could see it together some day? If you uh- don't mind watching it again.", nil),
+	Stem.new("Lorelai", 2, "Yeah! Honestly I would love to see what you think about it. ", nil),
+	Stem.new("Lorelai", 2, "I would definitely say it's a creative kind of movie. You know?", nil),
+	Stem.new("Douglass", 2, "..Yeah. Haha.", nil),
+}, nil)
+
+Green_2_Branch_2 = Tree.new({
+	Stem.new("Douglass", 2, "Maybe we could see it together some day? If you uh- don't mind watching it again.", nil),
+	Stem.new("Lorelai", 2, "Oh. Yeah, uh. Maybe.", nil),
+	Stem.new("Douglass", 2, "..Alright.", nil),
 }, nil)
 
 Blue_2 = Tree.new({

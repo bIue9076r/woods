@@ -171,3 +171,29 @@ Choice_1 = Branch.new("Lorelai",1,1,
 		end,
 	}
 )
+
+Choice_2 = Branch.new("Lorelai",1,0,
+	{
+		"I love PC movies.",
+		"What types of movies do you like?",
+		"Types of films you record?",
+		"Why are you a chemistry minor?",
+	},
+	{
+		function ()
+			Dialogue.tree = Red_2
+		end,
+
+		function ()
+			Dialogue.tree = Green_2
+		end,
+
+		function ()
+			Dialogue.tree = Blue_2
+		end,
+
+		function ()
+			Dialogue.tree = Purple_2
+		end,
+	}
+)
