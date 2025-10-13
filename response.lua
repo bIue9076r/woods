@@ -142,7 +142,9 @@ end
 -- updating Response
 function Response.Updating(dt)
 	Timer.update(dt)
-	local entry = Response.Get(Response.index)
+	--local entry = Response.Get(Response.index)
+	local entry = Response.Branch
+	
 	local x,y = love.mouse.getPosition()
 	if entry then
 		if entry.type == 1 then

@@ -181,19 +181,39 @@ Choice_2 = Branch.new("Lorelai",1,0,
 	},
 	{
 		function ()
-			Dialogue.tree = Red_2
+			return Red_2
 		end,
 
 		function ()
-			Dialogue.tree = Green_2
+			return Green_2
 		end,
 
 		function ()
-			Dialogue.tree = Blue_2
+			return Blue_2
 		end,
 
 		function ()
-			Dialogue.tree = Purple_2
+			return Purple_2
+		end,
+	}
+)
+
+Choice_2_Green = Branch.new("Lorelai",1,1,
+	{
+		"I love PC movies.",
+		"What types of movies do you like?",
+	},
+	{
+		function ()
+			return "End"
+		end,
+
+		function ()
+			if Compatibility.check() >= 0 then
+				return Green_2_Branch_1
+			else
+				return Green_2_Branch_2
+			end
 		end,
 	}
 )

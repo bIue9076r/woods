@@ -1,0 +1,15 @@
+Main Menu:
+	- Drawing the background to the screen
+	- Animation ( Programmers )
+
+Intro:
+	- Cutscene like with the Characters talking
+	- No player input
+
+Game:
+	- Dialogue Selection (10 second timer)
+	- Mouse and Keyboard
+	- 
+
+End/Credits:
+	- Cutscene based on ending

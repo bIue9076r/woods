@@ -60,7 +60,7 @@ Green_2 = Tree.new({
 	Stem.new("Lorelai", 3, "Well its cinematography is the best. Not even kidding.", nil),
 	Stem.new("Lorelai", 2, "They do a bunch of different scene and perspective changing, I mean-", nil),
 	Stem.new("Lorelai", 2, "You just have to see it for yourself.", nil),
-}, nil)
+}, Choice_2_Green)
 
 Green_2_Branch_1 = Tree.new({
 	Stem.new("Douglass", 2, "Maybe we could see it together some day? If you uh- don't mind watching it again.", nil),
