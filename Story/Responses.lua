@@ -205,7 +205,7 @@ Choice_2_Green = Branch.new("Lorelai",1,1,
 	},
 	{
 		function ()
-			return "End"
+			return END_TREE
 		end,
 
 		function ()

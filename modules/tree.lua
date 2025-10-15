@@ -70,3 +70,13 @@ function Branch.new(char,mood,type,strings,options)
 
 	return setmetatable(tbl,mt)
 end
+
+END_TREE = Tree.new()
+END_TREE.get = function(self)
+	Gamestate = "End"
+	local sound = Sound.get("cafe")
+	if sound then
+		sound:seek(0)
+		sound:stop()
+	end
+end
