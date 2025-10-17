@@ -80,7 +80,20 @@ Blue_2 = Tree.new({
 	Stem.new("Lorelai", 2, "Honestly it's kinda a lot of slice of life stuff I guess. But I do a little horror too.", nil),
 	Stem.new("Douglass", 2, "Horror? I can't really watch horror-", nil),
 	Stem.new("Lorelai", 2, "You scared?", nil),
-}, nil)
+}, Choice_2_Blue)
+
+Blue_2_Branch_1 = Tree.new({
+	Stem.new("Douglass", 2, "Uh.. no. not at all. Just uh.. Most are just uh- too tame.. You know?", nil),
+	Stem.new("Lorelai", 2, "Uhm. I guess.", nil),
+},nil)
+
+Blue_2_Branch_2 = Tree.new({
+	Stem.new("Douglass", 2, "Yeah.. yeah I uh- kinda am. Can't really handle gore that much.", nil),
+	Stem.new("Lorelai", 2, "Aw. That's kinda cute.", nil),
+	Stem.new("Douglass", 2, "..Really?", nil),
+	Stem.new("Lorelai", 7, "Least you admitted it, you know? Scared men are hot.", nil),
+	Stem.new("Douglass", 2, "..Uh... Yeah.", nil),
+},nil)
 
 Purple_2 = Tree.new({
 	Stem.new("Douglass", 2, "So.. Why are you a chemistry minor?", nil),

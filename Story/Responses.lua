@@ -200,8 +200,8 @@ Choice_2 = Branch.new("Lorelai",1,0,
 
 Choice_2_Green = Branch.new("Lorelai",1,1,
 	{
-		"I love PC movies.",
-		"What types of movies do you like?",
+		"Sounds good.",
+		"We could see it together?",
 	},
 	{
 		function ()
@@ -209,11 +209,27 @@ Choice_2_Green = Branch.new("Lorelai",1,1,
 		end,
 
 		function ()
-			if Compatibility.check() >= 0 then
+			if Compatibility.value >= 0 then
 				return Green_2_Branch_1
 			else
 				return Green_2_Branch_2
 			end
+		end,
+	}
+)
+
+Choice_2_Blue = Branch.new("Lorelai",1,1,
+	{
+		"Not at all. (lie)",
+		"Kinda",
+	},
+	{
+		function ()
+			return Blue_2_Branch_1
+		end,
+
+		function ()
+			return Blue_2_Branch_2
 		end,
 	}
 )
