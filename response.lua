@@ -55,7 +55,7 @@ end
 function NoResponse()
 	local f = Response.Branch.options[5] or Option_A
 	Gamestate = "Dialogue"
-	f()
+	Dialogue.tree = f() or Dialogue.tree
 	Timer.started = false
 end
 
@@ -166,7 +166,7 @@ end
 
 function Response.Mousepressed(x,y,button)
 	local entry = Response.Branch
-	
+
 	if entry.type == 1 then
 		if Response.Choice_2A:click(x,y) then Option_A() end
 		if Response.Choice_2B:click(x,y) then Option_B() end

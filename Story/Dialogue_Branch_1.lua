@@ -27,3 +27,9 @@ Green_1 = Tree.new({
 	Stem.new("Lorelai", 2, "Yeah. I'm actually a Radio Television Film major. So I do a lot of SFX makeup for films.", nil),
 	Stem.new("Douglass", 2, "Oh, really? Wow, that uh- that's pretty cool. I mean I watch a lot of movies. And films.", nil),
 }, Choice_2)
+
+No_1 = Tree.new({
+	Stem.new("Lorelai", 5, "..Uh.. Well. What do you like to do?", nil),
+	Stem.new("Douglass", 2, "Oh! Well.. I uh.. I like chemistry. I'm a neuroscience major.", nil),
+	Stem.new("Lorelai", 2, "Cool. I'm a Radio Television Film major. I'm minoring in Chem.", nil),
+},Choice_2)

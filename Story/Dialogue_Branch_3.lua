@@ -82,16 +82,109 @@ Dialogue.New("Tree_3_Purple_5_Branch_3_2", "Douglass", 6, "I get it. Theres.. A 
 Dialogue.New("Tree_3_Purple_5_Branch_3_3", "Lorelai", 2, "Oh yeah. I struggled a lot with that.",60,"Tree_3_Purple_5_Branch_3_4",true)
 Dialogue.New("Tree_3_Purple_5_Branch_3_4", "Douglass", 2, "Me too.",60,"Doug4",true)
 
-Red_3 = Response.New()
+Red_3 = Tree.new({
+	Stem.new("Lorelai", 7, "You think you'll taste just as good as the cappuccino?", nil),
+	Stem.new("Douglass", 2, "What? Like uh.. You mean if my coffee tastes just as good?", nil),
+},nil)
 
-Red_3_Branch_1 = Response.New()
+Red_3_Branch_1 = Tree.new({
+	Stem.new("Lorelai", 7, "I meant your lips. Like do your lips taste good.", nil),
+	Stem.new("Douglass", 2, "Oh! uh- … what?", nil),
+	Stem.new("Lorelai", 7, "Yeah.  You want a kiss?", nil),
+	Stem.new("Douglass", 2, "..Later. Uh- Maybe.", nil),
+},nil)
 
-Red_3_Branch_2 = Response.New()
+Red_3_Branch_2 = Tree.new({
+	Stem.new("Lorelai", 7, "I meant your lips. Like do your lips taste good.", nil),
+	Stem.new("Douglass", 2, "Oh! uh- … what?", nil),
+	Stem.new("Lorelai", 7, "Yeah.  You want a kiss?", nil),
+	Stem.new("Douglass", 2, "....", nil),
+},nil)
 
-Red_3_Branch_3 = Response.New()
+Red_3_Branch_3 = Tree.new({
+	Stem.new("Lorelai", 7, "Yeah. your coffee. Do you think it's good?", nil),
+	Stem.new("Douglass", 7, "Yeah.. yeah. I like it a lot. I don't know if like-", nil),
+	Stem.new("Douglass", 7, "Better than what you have. I never tried it.", nil),
+	Stem.new("Lorelai", 2, "Makes sense.", nil),
+},nil)
 
-Green_3 = Response.New()
+Green_3 = Tree.new({
+	Stem.new("Lorelai", 2, "What kind of coffee did you get?", nil),
+	Stem.new("Douglass", 2, "Oh. Oh- this? It's.. a double chocolate chip frappuccino. 75% sweet. Oat milk. And uh-", nil),
+	Stem.new("Douglass", 2, "Extra whipped cream. I-I mean I never really got this before- just heard it was good.", nil),
+	Stem.new("Lorelai", 6, "You seem like you've had it before.", nil),
+	Stem.new("Douglass", 2, ".. Oh! Oh no- no I just.. yeah. A recommendation. From like- the.. worker. I guess.", nil),
+},nil)
 
-Blue_3 = Response.New()
+Green_3_Branch_1 = Tree.new({
+	Stem.new("Lorelai", 2, "No- no I mean.. I feel like most people don't even remember the order if they get a new drink.", nil),
+	Stem.new("Lorelai", 5, "Just say you get it like all the time. Not really a reason to lie.", nil),
+	Stem.new("Douglass", 2, ".. Uh.. Yeah. I had it a few times.", nil),
+	Stem.new("Lorelai", 2, "See? It's that easy.", nil),
+	Stem.new("Douglass", 2, "...", nil),
+},nil)
 
-Purple_3 = Response.New()
+Green_3_Branch_2 = Tree.new({
+	Stem.new("Lorelai", 2, "No- no I mean.. I feel like most people don't even remember the order if they get a new drink.", nil),
+	Stem.new("Lorelai", 2, "But you're cute when you lie so I'll let it slide for now.", nil),
+	Stem.new("Douglass", 2, "..What? I-I'm not lying I-", nil),
+	Stem.new("Lorelai", 2, "See? Cute.", nil),
+	Stem.new("Douglass", 2, "...", nil),
+},nil)
+
+Green_3_Branch_3 = Tree.new({
+	Stem.new("Douglass", 2, "Yeah. Well I'm glad you like it then.", nil),
+	Stem.new("Douglass", 2, "It's really good. You should try it sometime.", nil),
+	Stem.new("Douglass", 2, "I guess I should. You definitely seem like a fan.", nil),
+	Stem.new("Douglass", 2, "..Yeah.", nil),
+},nil)
+
+Blue_3 = Tree.new({
+	Stem.new("Lorelai", 2, "Yeah, I always get cappuccinos. It's like- the perfect balance of milk and coffee.", nil),
+	Stem.new("Douglass", 2, "Really?", nil),
+	Stem.new("Lorelai", 2, "Yeah, it's also great for eight AMs-", nil),
+	Stem.new("Lorelai", 2, "And you can make super cute art shit with the milk foam!", nil),
+	Stem.new("Lorelai", 2, "Honestly, I don't even know why other people order other coffees.", nil),
+	Stem.new("Douglass", 2, "Wow uh.. Tha-", nil),
+	Stem.new("Lorelai", 3, "Yeah. Yeah I REALLY like cappuccinos. I mean the fact that it's also like a form of art.", nil),
+	Stem.new("Douglass", 2, "Wel-", nil),
+	Stem.new("Lorelai", 2, "And that it's so customizable to what you enjoy, and what you're interested in.", nil),
+	Stem.new("Lorelai", 2, "It's just such a perfect drink. You know?", nil),
+	Stem.new("Douglass", 2, "Ah, yeah.", nil),
+	Stem.new("Lorelai", 2, "I think that any sane person understands why cappuccinos are so popular.", nil),
+	Stem.new("Lorelai", 2, "Are you sane?", nil),
+	Stem.new("Douglass", 2, "I think so. Uh.", nil),
+	Stem.new("Lorelai", 2, "That's good.", nil),
+},nil)
+
+Purple_3 = Tree.new({
+	Stem.new("Lorelai", 2, "Do you like coffee? You.. seem to be liking your drink a lot.", nil),
+	Stem.new("Douglass", 2, "Yeah. It's a double chocolate frap. Really good. And it keeps me awake", nil),
+	Stem.new("Douglass", 2, "For when I have to stay up really late to study.", nil),
+	Stem.new("Lorelai", 2, "You study a lot?", nil),
+	Stem.new("Douglass", 2, "Yeah. Yeah- especially Organic Chemistry. Class sucks.", nil),
+},nil)
+
+Purple_3_Branch_1 = Tree.new({
+	Stem.new("Lorelai", 2, "We should study together some time. I mean we're in the same class after all.", nil),
+	Stem.new("Douglass", 2, "..Really? You'd want to?", nil),
+	Stem.new("Lorelai", 2, "Why not?", nil),
+	Stem.new("Douglass", 2, "Yeah.. Yeah alright.", nil),
+},nil)
+
+Purple_3_Branch_2 = Tree.new({
+	Stem.new("Lorelai", 2, "We should study together some time. I mean we're in the same class after all.", nil),
+	Stem.new("Douglass", 2, "..Really? You'd want to?", nil),
+	Stem.new("Lorelai", 2, "Why not?", nil),
+	Stem.new("Douglass", 2, "Yeah.. Yeah alright.", nil),
+	Stem.new("Lorelai", 7, "So we're gonna see the Godfather and study together?", nil),
+	Stem.new("Douglass", 2, "If uh.. If thats not too much. Is it?", nil),
+	Stem.new("Lorelai", 2, "Of course not. You're too cute not to see again.", nil),
+},nil)
+
+Purple_3_Branch_3 = Tree.new({
+	Stem.new("Lorelai", 2, "I think what we're learning is interesting, but like.. man. Hard class.", nil),
+	Stem.new("Douglass", 6, "I get it. Theres.. A lot. To memorize. I mean like stereochemistry too-", nil),
+	Stem.new("Lorelai", 2, "Oh yeah. I struggled a lot with that.", nil),
+	Stem.new("Douglass", 2, "Me too.", nil),
+},nil)

@@ -163,12 +163,19 @@ Choice_1 = Branch.new("Lorelai",1,1,
 	{
 		function ()
 			Likes_Chem = false
+			Compatibility.decrease(0.2)
 			return Red_1
 		end,
 
 		function ()
+			Compatibility.increase(0.2)
 			return Green_1
 		end,
+
+		[5] = function ()
+			Compatibility.decrease(0.4)
+			return No_1
+		end
 	}
 )
 
@@ -205,7 +212,7 @@ Choice_2_Green = Branch.new("Lorelai",1,1,
 	},
 	{
 		function ()
-			return END_TREE
+			return Green_2_Branch_3
 		end,
 
 		function ()
@@ -236,26 +243,86 @@ Choice_2_Blue = Branch.new("Lorelai",1,1,
 
 Choice_3 = Branch.new("Douglass",1,0,
 	{
-		"",
-		"",
-		"",
-		"",
+		"You think you’ll taste just as good?",
+		"What kind of coffee did you get?",
+		"I just really like cappuccinos.",
+		"Do you like coffee?",
 	},
 	{
 		function ()
-			
+			return Red_3
 		end,
 
 		function ()
-			
+			return Green_3
 		end,
 
 		function ()
-			
+			return Blue_3
 		end,
 
 		function ()
-			
+			return Purple_3
+		end,
+	}
+)
+
+Choice_3_Red = Branch.new("Douglass",1,1,
+	{
+		"No I meant your lips.",
+		"Yeah. Your coffee.",
+	},
+	{
+		function ()
+			if Compatibility.value > 0 then
+				return Red_3_Branch_1
+			else
+				return Red_3_Branch_2
+			end
+		end,
+
+		function ()
+			return Red_3_Branch_3
+		end,
+	}
+)
+
+Choice_3_Green = Branch.new("Douglass",1,1,
+	{
+		"Call out Doug's lie. (firm)",
+		"Call out Doug's lie. (flirt)",
+	},
+	{
+		function ()
+			if Compatibility.value <= 0 then
+				return Green_3_Branch_1
+			else
+				return Green_3_Branch_2
+			end
+		end,
+
+		function ()
+			return Green_3_Branch_3
+		end,
+	}
+)
+
+Choice_3_Purple = Branch.new("Douglass",1,1,
+	{
+		"Study together sometime?",
+		"Organic chem sucks.",
+	},
+	{
+		function ()
+			if Compatibility.value <= 0 then
+				return Purple_3_Branch_1
+			else
+				return Purple_3_Branch_2
+			end
+		end,
+
+		function ()
+			return Purple_3_Branch_3
 		end,
 	}
 )
