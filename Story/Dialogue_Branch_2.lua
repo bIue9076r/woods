@@ -51,7 +51,7 @@ Red_2 = Tree.new({
 	Stem.new("Lorelai", 2, "Yeah. He's five.", nil),
 	Stem.new("Douglass", 2, "Oh.", nil),
 	Stem.new("Lorelai", 6, "No but Superheroes are pretty cool. I mean they're all about justice. Seems cool.", nil),
-}, nil)
+}, Choice_3)
 
 Green_2 = Tree.new({
 	Stem.new("Douglass", 2, "So. What types of movies do you like?", nil),
@@ -67,13 +67,13 @@ Green_2_Branch_1 = Tree.new({
 	Stem.new("Lorelai", 2, "Yeah! Honestly I would love to see what you think about it. ", nil),
 	Stem.new("Lorelai", 2, "I would definitely say it's a creative kind of movie. You know?", nil),
 	Stem.new("Douglass", 2, "..Yeah. Haha.", nil),
-}, nil)
+}, Choice_3)
 
 Green_2_Branch_2 = Tree.new({
 	Stem.new("Douglass", 2, "Maybe we could see it together some day? If you uh- don't mind watching it again.", nil),
 	Stem.new("Lorelai", 2, "Oh. Yeah, uh. Maybe.", nil),
 	Stem.new("Douglass", 2, "..Alright.", nil),
-}, nil)
+}, Choice_3)
 
 Blue_2 = Tree.new({
 	Stem.new("Douglass", 2, "You film a lot of stuff? What kind of things do you uh.. film?", nil),
@@ -85,7 +85,7 @@ Blue_2 = Tree.new({
 Blue_2_Branch_1 = Tree.new({
 	Stem.new("Douglass", 2, "Uh.. no. not at all. Just uh.. Most are just uh- too tame.. You know?", nil),
 	Stem.new("Lorelai", 2, "Uhm. I guess.", nil),
-},nil)
+},Choice_3)
 
 Blue_2_Branch_2 = Tree.new({
 	Stem.new("Douglass", 2, "Yeah.. yeah I uh- kinda am. Can't really handle gore that much.", nil),
@@ -93,7 +93,7 @@ Blue_2_Branch_2 = Tree.new({
 	Stem.new("Douglass", 2, "..Really?", nil),
 	Stem.new("Lorelai", 7, "Least you admitted it, you know? Scared men are hot.", nil),
 	Stem.new("Douglass", 2, "..Uh... Yeah.", nil),
-},nil)
+},Choice_3)
 
 Purple_2 = Tree.new({
 	Stem.new("Douglass", 2, "So.. Why are you a chemistry minor?", nil),
@@ -102,4 +102,4 @@ Purple_2 = Tree.new({
 	Stem.new("Lorelai", 2, "And I feel like learning about how to formulate different types of special effects make up-", nil),
 	Stem.new("Lorelai", 3, "is just really cool to me. So in a way I feel like it's pretty similar.", nil),
 	Stem.new("Douglass", 2, "Oh, really? Wow, that uh- that's pretty cool. I mean I watch a lot of movies. And films.", nil),
-}, nil)
+}, Choice_3)

@@ -233,3 +233,29 @@ Choice_2_Blue = Branch.new("Lorelai",1,1,
 		end,
 	}
 )
+
+Choice_3 = Branch.new("Douglass",1,0,
+	{
+		"",
+		"",
+		"",
+		"",
+	},
+	{
+		function ()
+			
+		end,
+
+		function ()
+			
+		end,
+
+		function ()
+			
+		end,
+
+		function ()
+			
+		end,
+	}
+)

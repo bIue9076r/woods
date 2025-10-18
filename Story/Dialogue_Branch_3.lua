@@ -81,3 +81,17 @@ Dialogue.New("Tree_3_Purple_5_Branch_3_1", "Lorelai", 2, "I think what we're lea
 Dialogue.New("Tree_3_Purple_5_Branch_3_2", "Douglass", 6, "I get it. Theres.. A lot. To memorize. I mean like stereochemistry too-",60,"Tree_3_Purple_5_Branch_3_3",true)
 Dialogue.New("Tree_3_Purple_5_Branch_3_3", "Lorelai", 2, "Oh yeah. I struggled a lot with that.",60,"Tree_3_Purple_5_Branch_3_4",true)
 Dialogue.New("Tree_3_Purple_5_Branch_3_4", "Douglass", 2, "Me too.",60,"Doug4",true)
+
+Red_3 = Response.New()
+
+Red_3_Branch_1 = Response.New()
+
+Red_3_Branch_2 = Response.New()
+
+Red_3_Branch_3 = Response.New()
+
+Green_3 = Response.New()
+
+Blue_3 = Response.New()
+
+Purple_3 = Response.New()
