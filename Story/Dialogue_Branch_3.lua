@@ -85,7 +85,7 @@ Dialogue.New("Tree_3_Purple_5_Branch_3_4", "Douglass", 2, "Me too.",60,"Doug4",t
 Red_3 = Tree.new({
 	Stem.new("Lorelai", 7, "You think you'll taste just as good as the cappuccino?", nil),
 	Stem.new("Douglass", 2, "What? Like uh.. You mean if my coffee tastes just as good?", nil),
-},nil)
+},Choice_3_Red)
 
 Red_3_Branch_1 = Tree.new({
 	Stem.new("Lorelai", 7, "I meant your lips. Like do your lips taste good.", nil),
@@ -114,7 +114,7 @@ Green_3 = Tree.new({
 	Stem.new("Douglass", 2, "Extra whipped cream. I-I mean I never really got this before- just heard it was good.", nil),
 	Stem.new("Lorelai", 6, "You seem like you've had it before.", nil),
 	Stem.new("Douglass", 2, ".. Oh! Oh no- no I just.. yeah. A recommendation. From like- the.. worker. I guess.", nil),
-},nil)
+},Choice_3_Green)
 
 Green_3_Branch_1 = Tree.new({
 	Stem.new("Lorelai", 2, "No- no I mean.. I feel like most people don't even remember the order if they get a new drink.", nil),
@@ -163,7 +163,7 @@ Purple_3 = Tree.new({
 	Stem.new("Douglass", 2, "For when I have to stay up really late to study.", nil),
 	Stem.new("Lorelai", 2, "You study a lot?", nil),
 	Stem.new("Douglass", 2, "Yeah. Yeah- especially Organic Chemistry. Class sucks.", nil),
-},nil)
+},Choice_3_Purple)
 
 Purple_3_Branch_1 = Tree.new({
 	Stem.new("Lorelai", 2, "We should study together some time. I mean we're in the same class after all.", nil),
