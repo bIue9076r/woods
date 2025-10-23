@@ -86,10 +86,21 @@ Dialogue.New("Doug4_3_4_2_5_2_6", "Lorelai", 7, "I'll bring you one of mine or s
 Dialogue.New("Doug4_3_4_2_5_2_7", "Douglass", 2, "No I uh- I'll pass. Yeah. I'm good.", 60, "Doug4_3_4_2_5_2_8", true)
 Dialogue.New("Doug4_3_4_2_5_2_8", "Lorelai", 2, "Suit yourself", 60, "Doug5_1")
 
-Red_4 = Tree.new();
+Red_4 = Tree.new({
+	Stem.new("Lorelai", 7, "I meant your lips. Like do your lips taste good.", nil),
+	Stem.new("Douglass", 2, "Oh! uh- … what?", nil),
+	Stem.new("Lorelai", 7, "Yeah.  You want a kiss?", nil),
+	Stem.new("Douglass", 2, "..Later. Uh- Maybe.", nil),
+},nil);
 
-Green_4 = Tree.new();
+Green_4 = Tree.new({
+	Stem.new("Douglass", 2, "..Later. Uh- Maybe.", nil);
+},nil);
 
-Blue_4 = Tree.new();
+Blue_4 = Tree.new({
+	Stem.new("Douglass", 2, "..Later. Uh- Maybe.", nil);
+},nil);
 
-Purple_4 = Tree.new();
+Purple_4 = Tree.new({
+	Stem.new("Douglass", 2, "..Later. Uh- Maybe.", nil);
+},nil);
