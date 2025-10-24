@@ -87,20 +87,47 @@ Dialogue.New("Doug4_3_4_2_5_2_7", "Douglass", 2, "No I uh- I'll pass. Yeah. I'm 
 Dialogue.New("Doug4_3_4_2_5_2_8", "Lorelai", 2, "Suit yourself", 60, "Doug5_1")
 
 Red_4 = Tree.new({
-	Stem.new("Lorelai", 7, "I meant your lips. Like do your lips taste good.", nil),
-	Stem.new("Douglass", 2, "Oh! uh- … what?", nil),
-	Stem.new("Lorelai", 7, "Yeah.  You want a kiss?", nil),
-	Stem.new("Douglass", 2, "..Later. Uh- Maybe.", nil),
-},nil);
+	Stem.new("Lorelai", 6, "Are you just impressed with like.. anything?", nil),
+	Stem.new("Douglass", 2, "..What?", nil),
+	Stem.new("Lorelai", 2, "I mean I feel like a lot of people sew.", nil),
+	Stem.new("Douglass", 2, "I was just uh.. complimenting you.", nil),
+	Stem.new("Lorelai", 6, "You're really easy to please aren't you?", nil),
+	Stem.new("Douglass", 2, "Is uh.. that a good thing?", nil),
+},nil)
+
+Red_4_Branch_1 = Tree.new({
+	Stem.new("Lorelai", 2, "Yeah.", nil),
+	Stem.new("Douglass", 2, "Uh.. that's- that's good. I guess.", nil),
+	Stem.new("Lorelai", 2, "It is.", nil),
+	Stem.new("Douglass", 2, "...", nil),
+},nil)
+
+Red_4_Branch_2 = Tree.new({
+	Stem.new("Lorelai", 5, "Hell no.", nil),
+	Stem.new("Douglass", 2, "Oh. Uh. I'm.. I'm sorry.", nil),
+	Stem.new("Lorelai", 2, "Yeah.", nil),
+},nil)
+
+Red_4_Branch_2_Branch_1 = Tree.new({
+	Stem.new("Lorelai", 2, "Id's still kiss your easy ass anyways.", nil),
+	Stem.new("Douglass", 2, "What's wrong with you?!", nil),
+	Stem.new("Lorelai", 6, "Wow. Calm down.", nil),
+	Stem.new("Douglass", 2, "Wh- I just- What are you talking about?!", 60, nil),
+	Stem.new("Lorelai", 6, "Just like- drink your frap or whatever you got, and calm down.", nil),
+	Stem.new("Douglass", 2, "...", nil),
+},nil)
+
+Red_4_Branch_2_Branch_2 = Tree.new({
+	Stem.new("Lorelai", 2, "Id's still kiss your easy ass anyways.", nil),
+	Stem.new("Douglass", 2, "I uh- what.. What?", nil),
+	Stem.new("Lorelai", 7, "Yeah.", nil),
+	Stem.new("Douglass", 2, "Wow.", nil),
+},nil)
+
+Red_4_Branch_2_Branch_3 = Tree.new({
+	
+},nil)
 
 Green_4 = Tree.new({
 	Stem.new("Douglass", 2, "..Later. Uh- Maybe.", nil);
-},nil);
-
-Blue_4 = Tree.new({
-	Stem.new("Douglass", 2, "..Later. Uh- Maybe.", nil);
-},nil);
-
-Purple_4 = Tree.new({
-	Stem.new("Douglass", 2, "..Later. Uh- Maybe.", nil);
-},nil);
+},nil)
