@@ -326,3 +326,7 @@ Choice_3_Purple = Branch.new("Douglass",1,1,
 		end,
 	}
 )
+
+
+Choice_4 = Branch.new()
+Choice_4_Red = Branch.new()
