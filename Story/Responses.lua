@@ -328,5 +328,20 @@ Choice_3_Purple = Branch.new("Douglass",1,1,
 )
 
 
-Choice_4 = Branch.new()
+Choice_4 = Branch.new("Douglass",1,1,
+	{
+		"You seem impressed really easily.",
+		"I design a lot of clothes.",
+	},
+	{
+		function ()
+			return Red_4
+		end,
+
+		function ()
+			return Green_4
+		end,
+	}
+)
+
 Choice_4_Red = Branch.new()
