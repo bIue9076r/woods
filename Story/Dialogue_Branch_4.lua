@@ -112,7 +112,7 @@ Red_4_Branch_2_Branch_1 = Tree.new({
 	Stem.new("Lorelai", 2, "Id's still kiss your easy ass anyways.", nil),
 	Stem.new("Douglass", 2, "What's wrong with you?!", nil),
 	Stem.new("Lorelai", 6, "Wow. Calm down.", nil),
-	Stem.new("Douglass", 2, "Wh- I just- What are you talking about?!", 60, nil),
+	Stem.new("Douglass", 2, "Wh- I just- What are you talking about?!", nil),
 	Stem.new("Lorelai", 6, "Just like- drink your frap or whatever you got, and calm down.", nil),
 	Stem.new("Douglass", 2, "...", nil),
 },nil)
@@ -129,5 +129,15 @@ Red_4_Branch_2_Branch_3 = Tree.new({
 },nil)
 
 Green_4 = Tree.new({
-	Stem.new("Douglass", 2, "..Later. Uh- Maybe.", nil);
+	Stem.new("Lorelai", 2, "Yeah! I mean I make a lot of clothes myself.", nil),
+	Stem.new("Lorelai", 2, "It's a good skill to have in film.", nil),
+	Stem.new("Douglass", 2, "Ah. Yeah that makes a lot of sense.", nil),
+	Stem.new("Douglass", 2, "I mean you just do it for fun too?", nil),
 },nil)
+
+Green_4_Branch_1 = Tree.new({},nil)
+Green_4_Branch_1_Branch_1 = Tree.new({},nil)
+Green_4_Branch_1_Branch_2 = Tree.new({},nil)
+Green_4_Branch_2 = Tree.new({},nil)
+Green_4_Branch_2_Branch_1 = Tree.new({},nil)
+Green_4_Branch_2_Branch_2 = Tree.new({},nil)

@@ -188,3 +188,9 @@ Purple_3_Branch_3 = Tree.new({
 	Stem.new("Lorelai", 2, "Oh yeah. I struggled a lot with that.", nil),
 	Stem.new("Douglass", 2, "Me too.", nil),
 },nil)
+
+No_3 = Tree.new({
+	Stem.new("Douglass", 2, "..Well cappuccinos are good.", nil),
+	Stem.new("Lorelai", 2, "Yeah. That's why I got one.", nil),
+	Stem.new("Douglass", 2, "Makes sense..", nil),
+},nil)

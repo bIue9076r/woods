@@ -66,3 +66,14 @@ Sound.new("Lorelai_Huh","/Assets/lorelai-huh.mp3","static")
 Sound.new("Lorelai_Gasp","/Assets/lorelai-gasp.mp3","static")
 Sound.new("Lorelai_What","/Assets/lorelai-what.mp3","static")
 Sound.new("Lorelai_Laughter","/Assets/lorelai-laughter.mp3","static")
+
+-- Emotions
+Lorelai_Normal = 1
+Lorelai_Dissapointed = 2
+Lorelai_Concerned = 6
+Lorelai_Happy = 3
+Lorelai_Flirty = 7
+
+Douglass_Normal = 1
+Douglass_Awkward = 1
+Douglass_SideEye = 1
