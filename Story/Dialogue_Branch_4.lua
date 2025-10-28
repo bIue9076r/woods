@@ -93,7 +93,7 @@ Red_4 = Tree.new({
 	Stem.new("Douglass", 2, "I was just uh.. complimenting you.", nil),
 	Stem.new("Lorelai", 6, "You're really easy to please aren't you?", nil),
 	Stem.new("Douglass", 2, "Is uh.. that a good thing?", nil),
-},nil)
+},Choice_4_Red)
 
 Red_4_Branch_1 = Tree.new({
 	Stem.new("Lorelai", 2, "Yeah.", nil),
@@ -106,7 +106,7 @@ Red_4_Branch_2 = Tree.new({
 	Stem.new("Lorelai", 5, "Hell no.", nil),
 	Stem.new("Douglass", 2, "Oh. Uh. I'm.. I'm sorry.", nil),
 	Stem.new("Lorelai", 2, "Yeah.", nil),
-},nil)
+},Choice_4_Red_Branch_2)
 
 Red_4_Branch_2_Branch_1 = Tree.new({
 	Stem.new("Lorelai", 2, "Id's still kiss your easy ass anyways.", nil),
@@ -133,11 +133,72 @@ Green_4 = Tree.new({
 	Stem.new("Lorelai", 2, "It's a good skill to have in film.", nil),
 	Stem.new("Douglass", 2, "Ah. Yeah that makes a lot of sense.", nil),
 	Stem.new("Douglass", 2, "I mean you just do it for fun too?", nil),
+},Choice_4_Green)
+
+Green_4_Branch_1 = Tree.new({
+	Stem.new("Lorelai", 2, "I also do a lot of volunteering.", nil),
+	Stem.new("Douglass", 2, "Really?", nil),
+	Stem.new("Lorelai", 2, "Yeah. I design clothes for cats. For the winter.", nil),
+	Stem.new("Douglass", 2, "I- I uh.. I actually have a cat!", nil),
+	Stem.new("Lorelai", 2, "Oh- I love cats. If you need any clothes for them", nil),
+	Stem.new("Lorelai", 2, "Just give me a call.", nil),
+	Stem.new("Douglass", 2, "Yeah- yeah. I will. That sounds good.", nil),
+},Choice_4_Green_Branch_1)
+
+Green_4_Branch_1_Branch_1 = Tree.new({
+	Stem.new("Lorelai", 2, "What's your cat's name?", nil),
+	Stem.new("Douglass", 2, "It uh- his name is Heowth.", nil),
+	Stem.new("Lorelai", 2, "What kinda name is that?", nil),
+	Stem.new("Douglass", 2, "Heowth? From the Hokemon series?", nil),
+	Stem.new("Lorelai", 2, "What's that?", nil),
+	Stem.new("Douglass", 2, "It's uh.. just- forget about it.", nil),
+	Stem.new("Lorelai", 2, "No- wait come on it sounds fun.", nil),
+	Stem.new("Douglass", 2, "It's a franchise. You capture animals. I guess.", nil),
+	Stem.new("Lorelai", 7, "That doesn't sound very animal friendly.", nil),
+	Stem.new("Douglass", 2, "No- I mean-", nil),
+	Stem.new("Lorelai", 2, "I'm joking. Tell me about it later.", nil),
+	Stem.new("Douglass", 2, "..Alright.", nil),
 },nil)
 
-Green_4_Branch_1 = Tree.new({},nil)
-Green_4_Branch_1_Branch_1 = Tree.new({},nil)
-Green_4_Branch_1_Branch_2 = Tree.new({},nil)
-Green_4_Branch_2 = Tree.new({},nil)
-Green_4_Branch_2_Branch_1 = Tree.new({},nil)
-Green_4_Branch_2_Branch_2 = Tree.new({},nil)
+Green_4_Branch_1_Branch_2 = Tree.new({
+	Stem.new("Lorelai", 2, "Is caring for your cat hard?", nil),
+	Stem.new("Douglass", 2, "Well- I mean her's well behaved-", nil),
+	Stem.new("Douglass", 2, "For the most part. Sometimes he scratches.", nil),
+	Stem.new("Lorelai", 2, "Yeah. Some cats kinda do that.", nil),
+	Stem.new("Douglass", 2, "He's cute enough that I just deal with it.", nil),
+	Stem.new("Lorelai", 2, "And that's completely understandable.", nil),
+},nil)
+
+Green_4_Branch_2 = Tree.new({
+	Stem.new("Lorelai", 2, "I made a corset once.", nil),
+	Stem.new("Lorelai", 2, "It was a little hard getting the cinching part right", nil),
+	Stem.new("Lorelai", 3, "But it turned out really well", nil),
+	Stem.new("Douglass", 2, "Yeah?", nil),
+	Stem.new("Lorelai", 2, "Ahuh.", nil),
+},Choice_4_Green_Branch_2)
+
+Green_4_Branch_2_Branch_1 = Tree.new({
+	Stem.new("Lorelai", 2, "I also made a lot of other clothes too-", nil),
+	Stem.new("Lorelai", 2, "Skirts, tops, dresses- it's a fun hobby.", nil),
+	Stem.new("Douglass", 2, "Yeah. You seem to.. really like it.", nil),
+	Stem.new("Lorelai", 2, "I do. It's fun designing things.", nil),
+	Stem.new("Douglass", 2, "I can see what you mean.", nil),
+},nil)
+
+Green_4_Branch_2_Branch_2 = Tree.new({
+	Stem.new("Lorelai", 7, "You would look good in a corset Doug", nil),
+	Stem.new("Douglass", 2, "Uh.. What- what are you talking about?", nil),
+	Stem.new("Lorelai", 2, "You should put a corset on.", nil),
+	Stem.new("Douglass", 2, "What. What like corset- are you talking about", nil),
+	Stem.new("Lorelai", 2, "Like any corset! Come on. Try one on later.", nil),
+	Stem.new("Lorelai", 7, "I'll bring you one of mine or something", nil),
+	Stem.new("Douglass", 2, "No I uh- I'll pass. Yeah. I'm good.", nil),
+	Stem.new("Lorelai", 2, "Suit yourself", nil),
+},nil)
+
+No_4 = Tree.new({
+	Stem.new("Douglass", 2, "...Lorelai?", nil),
+	Stem.new("Lorelai", 2, "Impressive? I know.", nil),
+	Stem.new("Douglass", 2, "...", nil),
+},nil)
+

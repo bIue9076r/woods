@@ -345,3 +345,7 @@ Choice_4 = Branch.new("Douglass",1,1,
 )
 
 Choice_4_Red = Branch.new()
+Choice_4_Red_Branch_2 = Branch.new()
+Choice_4_Green = Branch.new()
+Choice_4_Green_Branch_1 = Branch.new()
+Choice_4_Green_Branch_2 = Branch.new()

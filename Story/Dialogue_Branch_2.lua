@@ -126,4 +126,6 @@ No_2 = Tree.new({
 	Stem.new("Douglass", 2, "Yeah.", nil),
 	Stem.new("Lorelai", 2, "Movies are cool.", nil),
 	Stem.new("Douglass", 2, "Yeah...", nil),
+	Stem.new("Douglass", 2, "So like uh- what- what type of coffee did you get?", nil),
+	Stem.new("Lorelai", 2, "I just got a cappuccino. I think they taste good.", nil),
 },Choice_3)
