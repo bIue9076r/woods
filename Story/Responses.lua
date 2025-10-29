@@ -427,3 +427,7 @@ Choice_4_Green_Branch_2 = Branch.new("Douglass",1,1,
 		end,
 	}
 )
+
+Choice_5 = Branch.new()
+
+Choice_5_Red = Branch.new()
