@@ -344,8 +344,86 @@ Choice_4 = Branch.new("Douglass",1,1,
 	}
 )
 
-Choice_4_Red = Branch.new()
-Choice_4_Red_Branch_2 = Branch.new()
-Choice_4_Green = Branch.new()
-Choice_4_Green_Branch_1 = Branch.new()
-Choice_4_Green_Branch_2 = Branch.new()
+Choice_4_Red = Branch.new("Douglass",1,1,
+	{
+		"Yeah.",
+		"Hell no.",
+	},
+	{
+		function ()
+			return Red_4_Branch_1
+		end,
+
+		function ()
+			return Red_4_Branch_2
+		end,
+	}
+)
+
+Choice_4_Red_Branch_2 = Branch.new("Douglass",1,1,
+	{
+		"I'd still kiss you though.",
+		"...",
+	},
+	{
+		function ()
+			if Compatibility.value <= -1 then
+				return Red_4_Branch_2_Branch_1
+			else
+				return Red_4_Branch_2_Branch_2
+			end
+		end,
+
+		function ()
+			return Red_4_Branch_2_Branch_3
+		end,
+	}
+)
+
+Choice_4_Green = Branch.new("Douglass",1,1,
+	{
+		"I make clothes for cats",
+		"Made a corset once",
+	},
+	{
+		function ()
+			return Green_4_Branch_1
+		end,
+
+		function ()
+			return Green_4_Branch_2
+		end,
+	}
+)
+
+Choice_4_Green_Branch_1 = Branch.new("Douglass",1,1,
+	{
+		"Cat's name",
+		"Caring for cat's hard?",
+	},
+	{
+		function ()
+			return Green_4_Branch_1_Branch_1
+		end,
+
+		function ()
+			return Green_4_Branch_1_Branch_2
+		end,
+	}
+)
+
+Choice_4_Green_Branch_2 = Branch.new("Douglass",1,1,
+	{
+		"I've made a lot of other clothes.",
+		"You would look good in a corset.",
+	},
+	{
+		function ()
+			return Green_4_Branch_2_Branch_1
+		end,
+
+		function ()
+			return Green_4_Branch_2_Branch_2
+		end,
+	}
+)
