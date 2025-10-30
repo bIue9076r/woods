@@ -217,6 +217,7 @@ Choice_2_Green = Branch.new("Lorelai",1,1,
 
 		function ()
 			if Compatibility.value >= 0 then
+				Movie_Date = true
 				return Green_2_Branch_1
 			else
 				return Green_2_Branch_2
@@ -314,6 +315,7 @@ Choice_3_Purple = Branch.new("Douglass",1,1,
 	},
 	{
 		function ()
+			Study_Together = true
 			if Compatibility.value <= 0 then
 				return Purple_3_Branch_1
 			else
@@ -428,6 +430,48 @@ Choice_4_Green_Branch_2 = Branch.new("Douglass",1,1,
 	}
 )
 
-Choice_5 = Branch.new()
+Choice_5 = Branch.new("Lorelai",1,1,
+	{
+		"No. I go out alot actually. (lie)",
+		"Yeah. I stay in mostly. (truth)",
+	},
+	{
+		function ()
+			return Red_5
+		end,
 
-Choice_5_Red = Branch.new()
+		function ()
+			if Compatibility.value >= 1 then
+				return Green_5_Alt
+			else
+				return Green_5
+			end
+		end,
+	}
+)
+
+Choice_5_Red = Branch.new("Lorelai",1,0,
+	{
+		"Sigma Chi",
+		"Delta Sigma Omega",
+		"Delta Rho",
+		"Epsilon Phi",
+	},
+	{
+		function ()
+			return Red_5_Branch_1
+		end,
+
+		function ()
+			return Red_5_Branch_2
+		end,
+
+		function ()
+			return Red_5_Branch_3
+		end,
+
+		function ()
+			return Red_5_Branch_4
+		end,
+	}
+)
