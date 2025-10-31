@@ -475,3 +475,5 @@ Choice_5_Red = Branch.new("Lorelai",1,0,
 		end,
 	}
 )
+
+Choice_6 = Branch.new()
