@@ -476,4 +476,44 @@ Choice_5_Red = Branch.new("Lorelai",1,0,
 	}
 )
 
-Choice_6 = Branch.new()
+Choice_6 = Branch.new("Lorelai",1,0,
+	{
+		"So you  won't have time for a boyfriend?",
+		"Do you have a preference?",
+		"Parties aren't really my thing.",
+		"Study a lot?",
+	},
+	{
+		function ()
+			return Red_6
+		end,
+
+		function ()
+			
+		end,
+
+		function ()
+			
+		end,
+
+		function ()
+			
+		end,
+	}
+)
+
+Choice_6_Red = Branch.new("Lorelai",1,1,
+	{
+		"Apologize",
+		"Stand your ground",
+	},
+	{
+		function ()
+			return Red_6_Branch_1
+		end,
+
+		function ()
+			return Red_6_Branch_2
+		end,
+	}
+)
