@@ -437,6 +437,7 @@ Choice_5 = Branch.new("Lorelai",1,1,
 	},
 	{
 		function ()
+			Doug_Lie = true
 			return Red_5
 		end,
 
@@ -489,15 +490,27 @@ Choice_6 = Branch.new("Lorelai",1,0,
 		end,
 
 		function ()
-			
+			if Doug_Lie then
+				return Green_6
+			else
+				return Green_6_Alt
+			end
 		end,
 
 		function ()
-			
+			if Doug_Lie then
+				return Blue_6
+			else
+				return Blue_6_Alt
+			end
 		end,
 
 		function ()
-			
+			if Study_Together then
+				return Purple_6_Alt
+			else
+				return Purple_6
+			end
 		end,
 	}
 )
