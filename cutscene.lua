@@ -13,7 +13,7 @@ Tutorial = true
 String = [[
 
 
-Douglas and Lorelai are going on a quick coffee shop run together. Class is starting soon, and they don’t have much time to talk. Make decisions for both Doug and Lorelai, and see if you can get them together (or break them apart) in five minutes before you’re OUT OF TIME!
+Douglass and Lorelai are going on a quick coffee shop run together. Class is starting soon, and they don’t have much time to talk. Make decisions for both Doug and Lorelai, and see if you can get them together (or break them apart) in five minutes before you’re OUT OF TIME!
 
 
 ]]

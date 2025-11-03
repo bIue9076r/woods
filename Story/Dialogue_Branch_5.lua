@@ -19,7 +19,7 @@ Dialogue.New("Doug5_1_5_1_7_1_4", "Douglass", 1, "Yeah.. yeah. I uh.. knew a bro
 Dialogue.New("Doug5_1_5_1_7_1_5", "Lorelai", 1, "Wow, alright party animal!", 60, "Doug5_1_5_1_7_1_6", true)
 Dialogue.New("Doug5_1_5_1_7_1_6", "Lorelai", 1, "Save some play for me, damn.", 60, "Doug6_1")
 
-Dialogue.New("Doug5_1_5_2_7_2_1", "Douglas", 1, "(insert fake frat name)", 60, "Doug5_1_5_2_7_2_2", true)
+Dialogue.New("Doug5_1_5_2_7_2_1", "Douglass", 1, "(insert fake frat name)", 60, "Doug5_1_5_2_7_2_2", true)
 Dialogue.New("Doug5_1_5_2_7_2_2", "Lorelai", 1, "Dude. That's not even a real frat.", 60, "Doug5_1_5_2_7_2_3", true)
 Dialogue.New("Doug5_1_5_2_7_2_3", "Douglass", 1, "It's... not?", 60, "Doug5_1_5_2_7_2_4", true)
 Dialogue.New("Doug5_1_5_2_7_2_4", "Lorelai", 1, "No.", 60, "Doug5_1_5_2_7_2_5", true)
@@ -67,7 +67,7 @@ Red_5_Branch_1 = Tree.new({
 },Choice_6)
 
 Red_5_Branch_2 = Tree.new({
-	Stem.new("Douglas", 1, "(insert fake frat name)", nil),
+	Stem.new("Douglass", 1, "(insert fake frat name)", nil),
 	Stem.new("Lorelai", 1, "Dude. That's not even a real frat.", nil),
 	Stem.new("Douglass", 1, "It's... not?", nil),
 	Stem.new("Lorelai", 1, "No.", nil),
@@ -80,7 +80,7 @@ Red_5_Branch_2 = Tree.new({
 },Choice_6)
 
 Red_5_Branch_3 = Tree.new({
-	Stem.new("Douglas", 1, "(insert fake frat name)", nil),
+	Stem.new("Douglass", 1, "(insert fake frat name)", nil),
 	Stem.new("Lorelai", 1, "Dude. That's not even a real frat.", nil),
 	Stem.new("Douglass", 1, "It's... not?", nil),
 	Stem.new("Lorelai", 1, "No.", nil),
@@ -93,7 +93,7 @@ Red_5_Branch_3 = Tree.new({
 },Choice_6)
 
 Red_5_Branch_4 = Tree.new({
-	Stem.new("Douglas", 1, "(insert fake frat name)", nil),
+	Stem.new("Douglass", 1, "(insert fake frat name)", nil),
 	Stem.new("Lorelai", 1, "Dude. That's not even a real frat.", nil),
 	Stem.new("Douglass", 1, "It's... not?", nil),
 	Stem.new("Lorelai", 1, "No.", nil),
