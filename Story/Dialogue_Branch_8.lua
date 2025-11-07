@@ -10,15 +10,11 @@ Red_8_Alt_2 = Tree.new({
 	
 },nil)
 
-Red_8_Alt_3 = Tree.new({
+Red_8_Alt_2_Branch_1 = Tree.new({
 	
 },nil)
 
-Red_8_Alt_3_Branch_1 = Tree.new({
-	
-},nil)
-
-Red_8_Alt_3_Branch_2 = Tree.new({
+Red_8_Alt_2_Branch_2 = Tree.new({
 	
 },nil)
 

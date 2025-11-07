@@ -530,3 +530,73 @@ Choice_6_Red = Branch.new("Lorelai",1,1,
 		end,
 	}
 )
+
+Choice_7 = Branch.new("Douglass",1,1,
+	{
+		"You're excited?",
+		"I'm glad too.",
+	},
+	{
+		function ()
+			if Compatibility.value <= -1 then
+				return Red_7
+			else
+				return Red_7_Alt
+			end
+		end,
+
+		function ()
+			if Compatibility.value >= 1 then
+				return Green_7_Alt
+			else
+				return Green_7
+			end
+		end,
+	}
+)
+
+Choice_8 = Branch.new("Douglass",1,1,
+	{
+		"I actually don't really like you.",
+		"Can I see you again sometime?",
+	},
+	{
+		function ()
+			Compatibility.decrease(1)
+
+			if Compatibility.value <= 1 then
+				if Compatibility.value <= -1 then
+					return Red_8
+				else
+					return Red_8_Alt_1
+				end
+			else
+				return Red_8_Alt_2
+			end
+		end,
+
+		function ()
+			if Compatibility.value <= 1 then
+				if Compatibility.value <= -1 then
+					return Green_8
+				else
+					return Green_8_Alt_1
+				end
+			else
+				if Movie_Date and Study_Together then
+					return Green_8_Alt_2_Alt_1
+				end
+
+				if Movie_Date then
+					return Green_8_Alt_2_Alt_2
+				end
+
+				if Study_Together then
+					return Green_8_Alt_2_Alt_3
+				end
+
+				return Green_8_Alt_2_Alt_4
+			end
+		end,
+	}
+)

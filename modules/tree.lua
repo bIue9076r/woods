@@ -23,11 +23,13 @@ Tree = {}
 Tree.stems = {}
 Tree.link = "END"
 Tree.index = 1
+Tree.warp = false
 
-function Tree.new(stems,link)
+function Tree.new(stems,link,warp)
 	local tbl = {
 		stems = stems or {},
 		link = link or "END",
+		warp = warp or false,
 	}
 
 	local mt = {

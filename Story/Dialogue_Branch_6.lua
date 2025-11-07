@@ -5,7 +5,7 @@ Red_6 = Tree.new({
 	Stem.new("Douglass",1,"Make time? But you seem like you don't",nil),
 	Stem.new("Douglass",1,"have any time to make.",nil),
 	Stem.new("Lorelai",1,"I have time, Doug.",nil),
-},nil)
+},Choice_6_Red)
 
 Red_6_Branch_1 = Tree.new({
 	Stem.new("Douglass",1,"Sorry, I uh.. I just don't want to take too much of your time.",nil),
@@ -14,7 +14,10 @@ Red_6_Branch_1 = Tree.new({
 	Stem.new("Lorelai",1,"But i'm still here.",nil),
 	Stem.new("Douglass",1,"That's true.",nil),
 	Stem.new("Lorelai",1,"No worries.",nil),
-},nil)
+	Stem.new("Douglass",1,"So- yeah. Honestly, it's.. nice to finally meet you.",nil),
+	Stem.new("Douglass",1,"I mean obviously we talked about how we're in the same class",nil),
+	Stem.new("Douglass",1,"But actually getting to know you- it's exciting. You know?",nil),
+},Choice_7)
 
 Red_6_Branch_2 = Tree.new({
 	Stem.new("Douglass",1,"No, you seem really busy. I mean-",nil),
@@ -26,7 +29,10 @@ Red_6_Branch_2 = Tree.new({
 	Stem.new("Douglass",1,"What?",nil),
 	Stem.new("Lorelai",1,"You're genuinely freaking out right now.",nil),
 	Stem.new("Douglass",1,"Sorry. Uh.. yeah.",nil),
-},nil)
+	Stem.new("Douglass",1,"So- yeah. Honestly, it's.. nice to finally meet you.",nil),
+	Stem.new("Douglass",1,"I mean obviously we talked about how we're in the same class",nil),
+	Stem.new("Douglass",1,"But actually getting to know you- it's exciting. You know?",nil),
+},Choice_7)
 
 Green_6 = Tree.new({
 	Stem.new("Douglass",1,"Do you have a preference? Like.. staying in or out?",nil),
@@ -41,7 +47,10 @@ Green_6 = Tree.new({
 	Stem.new("Lorelai",1,"You like both too?",nil),
 	Stem.new("Douglass",1,"Yea-yeah. Thats what I meant. I like both a lot.",nil),
 	Stem.new("Lorelai",1,"Alright.",nil),
-},nil)
+	Stem.new("Douglass",1,"So- yeah. Honestly, it's.. nice to finally meet you.",nil),
+	Stem.new("Douglass",1,"I mean obviously we talked about how we're in the same class",nil),
+	Stem.new("Douglass",1,"But actually getting to know you- it's exciting. You know?",nil),
+},Choice_7)
 
 Green_6_Alt = Tree.new({
 	Stem.new("Douglass",1,"Do you have a preference? Like.. staying in or out?",nil),
@@ -57,7 +66,10 @@ Green_6_Alt = Tree.new({
 	Stem.new("Lorelai",1,"That doesn't mean I don't like being at home.",nil),
 	Stem.new("Douglass",1,"Yeah.. Yeah that's true.",nil),
 	Stem.new("Lorelai",1,"But I know what you mean. Im glad we have this in common.",nil),
-},nil)
+	Stem.new("Douglass",1,"So- yeah. Honestly, it's.. nice to finally meet you.",nil),
+	Stem.new("Douglass",1,"I mean obviously we talked about how we're in the same class",nil),
+	Stem.new("Douglass",1,"But actually getting to know you- it's exciting. You know?",nil),
+},Choice_7)
 
 Blue_6 = Tree.new({
 	Stem.new("Douglass",1,"Yeah.. parties arent my thing. Too many people-",nil),
@@ -71,7 +83,10 @@ Blue_6 = Tree.new({
 	Stem.new("Douglass",1,"Sometimes I hate parties, and something I love them?",nil),
 	Stem.new("Lorelai",1,"You sound crazy.",nil),
 	Stem.new("Douglass",1,"..Huh?",nil),
-},nil)
+	Stem.new("Douglass",1,"So- yeah. Honestly, it's.. nice to finally meet you.",nil),
+	Stem.new("Douglass",1,"I mean obviously we talked about how we're in the same class",nil),
+	Stem.new("Douglass",1,"But actually getting to know you- it's exciting. You know?",nil),
+},Choice_7)
 
 Blue_6_Alt = Tree.new({
 	Stem.new("Douglass",1,"Yeah.. parties arent my thing. Too many people-",nil),
@@ -82,7 +97,10 @@ Blue_6_Alt = Tree.new({
 	Stem.new("Lorelai",1,"Honestly I just like being with my friends. The party's just an extra.",nil),
 	Stem.new("Lorelai",1,"Plus, I get in for free, so i think that changes things a bit.",nil),
 	Stem.new("Douglass",1,"Yeah.. yeah probably.",nil),
-},nil)
+	Stem.new("Douglass",1,"So- yeah. Honestly, it's.. nice to finally meet you.",nil),
+	Stem.new("Douglass",1,"I mean obviously we talked about how we're in the same class",nil),
+	Stem.new("Douglass",1,"But actually getting to know you- it's exciting. You know?",nil),
+},Choice_7)
 
 Purple_6 = Tree.new({
 	Stem.new("Douglass",1,"You have to study a lot?",nil),
@@ -92,7 +110,10 @@ Purple_6 = Tree.new({
 	Stem.new("Douglass",1,"That's true. I mean I have to study like-",nil),
 	Stem.new("Douglass",1,"Every single day. Neuroscience is tough.",nil),
 	Stem.new("Lorelai",1,"I can imagine.",nil),
-},nil)
+	Stem.new("Douglass",1,"So- yeah. Honestly, it's.. nice to finally meet you.",nil),
+	Stem.new("Douglass",1,"I mean obviously we talked about how we're in the same class",nil),
+	Stem.new("Douglass",1,"But actually getting to know you- it's exciting. You know?",nil),
+},Choice_7)
 
 Purple_6_Alt = Tree.new({
 	Stem.new("Douglass",1,"You have to study a lot?",nil),
@@ -110,11 +131,17 @@ Purple_6_Alt = Tree.new({
 	Stem.new("Lorelai",1,"Poetic.",nil),
 	Stem.new("Douglass",1,"In a good way?",nil),
 	Stem.new("Lorelai",1,"In a good way.",nil),
-},nil)
+	Stem.new("Douglass",1,"So- yeah. Honestly, it's.. nice to finally meet you.",nil),
+	Stem.new("Douglass",1,"I mean obviously we talked about how we're in the same class",nil),
+	Stem.new("Douglass",1,"But actually getting to know you- it's exciting. You know?",nil),
+},Choice_7)
 
 No_6 = Tree.new({
 	Stem.new("Lorelai",1,".. I guess it's interesting.",nil),
 	Stem.new("Douglass",1,"No- no it is.",nil),
 	Stem.new("Lorelai",1,"If you say so.",nil),
 	Stem.new("Douglass",1,"Uh..",nil),
-},nil)
+	Stem.new("Douglass",1,"So- yeah. Honestly, it's.. nice to finally meet you.",nil),
+	Stem.new("Douglass",1,"I mean obviously we talked about how we're in the same class",nil),
+	Stem.new("Douglass",1,"But actually getting to know you- it's exciting. You know?",nil),
+},Choice_7)

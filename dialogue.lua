@@ -69,9 +69,14 @@ function Dialogue.Mousepressed(x,y,button)
 		--local entry = Dialogue.Get(Dialogue.index)
 
 		local link = Dialogue.tree:next()
+		local warp = Dialogue.tree.warp
 		if link then
-			Gamestate = "Response"
-			Response.Load()
+			if not warp then
+				Gamestate = "Response"
+				Response.Load()
+			else
+				Dialogue.tree = Dialogue.tree.link
+			end
 		end
 	end
 end
