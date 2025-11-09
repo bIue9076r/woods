@@ -14,7 +14,7 @@ end
 function Compatibility.decrease(amt)
 	Compatibility.value = Compatibility.value + amt
 	-- end game immediately / timer = 0 when comp = -2 
-	Compatibility.check()
+	-- Compatibility.check()
 end
 
 function Compatibility.check() 

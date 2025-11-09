@@ -202,6 +202,11 @@ Choice_2 = Branch.new("Lorelai",1,0,
 		function ()
 			return Purple_2
 		end,
+
+		[5] = function ()
+			Compatibility.decrease(0.4)
+			return No_2
+		end,
 	}
 )
 
@@ -264,6 +269,11 @@ Choice_3 = Branch.new("Douglass",1,0,
 
 		function ()
 			return Purple_3
+		end,
+
+		[5] = function ()
+			Compatibility.decrease(0.4)
+			return No_3
 		end,
 	}
 )
@@ -342,6 +352,11 @@ Choice_4 = Branch.new("Douglass",1,1,
 
 		function ()
 			return Green_4
+		end,
+
+		[5] = function ()
+			Compatibility.decrease(0.4)
+			return No_4
 		end,
 	}
 )
@@ -448,6 +463,11 @@ Choice_5 = Branch.new("Lorelai",1,1,
 				return Green_5
 			end
 		end,
+
+		[5] = function ()
+			Compatibility.decrease(0.4)
+			return No_5
+		end,
 	}
 )
 
@@ -512,6 +532,11 @@ Choice_6 = Branch.new("Lorelai",1,0,
 				return Purple_6
 			end
 		end,
+
+		[5] = function ()
+			Compatibility.decrease(0.4)
+			return No_6
+		end,
 	}
 )
 
@@ -551,6 +576,11 @@ Choice_7 = Branch.new("Douglass",1,1,
 			else
 				return Green_7
 			end
+		end,
+
+		[5] = function ()
+			Compatibility.decrease(0.4)
+			return No_7
 		end,
 	}
 )
@@ -597,6 +627,29 @@ Choice_8 = Branch.new("Douglass",1,1,
 
 				return Green_8_Alt_2_Alt_4
 			end
+		end,
+
+		[5] = function ()
+			Compatibility.decrease(0.4)
+			return No_8
+		end,
+	}
+)
+
+Choice_8_Red_Alt_2 = Branch.new("Douglass",1,1,
+	{
+		"Yes",
+		"No",
+	},
+	{
+		function ()
+			Compatibility.decrease(0.5)
+			return Red_8_Alt_2_Branch_1
+		end,
+
+		function ()
+			Compatibility.decrease(1)
+			return Red_8_Alt_2_Branch_2
 		end,
 	}
 )

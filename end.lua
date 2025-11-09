@@ -49,6 +49,48 @@ function End_Load()
 end
 
 function End_Update(dt)
+	if Scroll_T <= 1 then
+		Credits = [[
+
+Kairos Koffee
+
+
+-- Programmers ------------------------------------------------------------
+
+@kaorei
+@le_banane
+@lydsleepy
+
+-- Artists ------------------------------------------------------------
+
+@lucasnyn
+@tshnamii
+@yuno_d.
+
+-- Writters ------------------------------------------------------------
+
+@lucasnyn
+
+-- Sound Design ------------------------------------------------------------
+
+@le_banane
+
+-- Project Managers ------------------------------------------------------------
+
+@lucasnyn
+
+-- Special Thanks To ------------------------------------------------------------
+
+Music (jazz-1) by Ievgen Poltavskyi from Pixabay
+Levi Windows (Font) by Levi Szekeres
+Sound Effects (lorelai-huh, lorelai-what) by freesound_community from Pixabay
+Sound Effects (douglass-huh, lorelai-gasp, crowd-shocked, applause-crowd, lorelai-laughter) by Universfield from Pixabay
+
+
+Thanks for Playing!
+
+]].."Your Attraction: "..Compatibility.value
+	end
 	Scroll_T = Scroll_T + 2*dt
 
 	if Scroll_T >= 140 then
