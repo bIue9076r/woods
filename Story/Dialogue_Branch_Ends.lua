@@ -51,8 +51,8 @@ Bad = Tree.new({
 Neutral = Tree.new({
 	Stem.new("Douglass", Douglass_Talk, "I had a good time talking with you.", nil),
 	Stem.new("Lorelai", Lorelai_Talk, "Yeah me too.", nil),
-	Stem.new("Douglass", Douglass_Talk, "You seem like.. super cool and I’m glad we got to talk.", nil),
-	Stem.new("Lorelai", Lorelai_Talk, "I feel the same way You’re not half bad man.", nil),
+	Stem.new("Douglass", Douglass_Talk, "You seem like.. super cool and I'm glad we got to talk.", nil),
+	Stem.new("Lorelai", Lorelai_Talk, "I feel the same way You're not half bad man.", nil),
 	Stem.new("Douglass", Douglass_Talk, "See you in class?", nil),
 	Stem.new("Lorelai", Lorelai_Talk, "For sure.", nil),
 	Stem.new("Douglass", Douglass_Talk, "See you.", nil),
@@ -65,7 +65,7 @@ Good = Tree.new({
 	Stem.new("Douglass", Douglass_Talk, "I uh.. I..", nil),
 	Stem.new("Lorelai", Lorelai_Talk, "Whats up?", nil),
 	Stem.new("Douglass", Douglass_Talk, "I really really like you. Like.. Like a lot.", nil),
-	Stem.new("Douglass", Douglass_Talk, "And I think that you’re just so cool.. and smart.. and cool!", nil),
+	Stem.new("Douglass", Douglass_Talk, "And I think that you're just so cool.. and smart.. and cool!", nil),
 	Stem.new("Douglass", Douglass_Talk, "I want to see you again.", nil),
 	Stem.new("Lorelai", Lorelai_Talk, "Yeah. I do too. I feel the same way.", nil),
 	Stem.new("Douglass", Douglass_Talk, "You do?", nil),
@@ -73,5 +73,5 @@ Good = Tree.new({
 	Stem.new("Douglass", Douglass_Talk, "Well.. then what now?", nil),
 	Stem.new("Lorelai", Lorelai_Talk, "Walk with me to class. I wanna tell you something.", nil),
 	Stem.new("Douglass", Douglass_Talk, "Alright.", nil),
-	Stem.new("Lorelai", Lorelai_Talk, "Cm’here.", nil),
+	Stem.new("Lorelai", Lorelai_Talk, "Cm'here.", nil),
 })

@@ -69,7 +69,7 @@ Response.New("Choice_4","Lorelai",1,1,{
 })
 
 Response.New("Choice_5","Douglass",1,0,{
-	"You think you’ll taste just as good?",
+	"You think you'll taste just as good?",
 	"What kind of coffee did you get?",
 	"I just really like cappuccinos.",
 	"Do you like coffee?",
@@ -249,7 +249,7 @@ Choice_2_Blue = Branch.new("Lorelai",1,1,
 
 Choice_3 = Branch.new("Douglass",1,0,
 	{
-		"You think you’ll taste just as good?",
+		"You think you'll taste just as good?",
 		"What kind of coffee did you get?",
 		"I just really like cappuccinos.",
 		"Do you like coffee?",
