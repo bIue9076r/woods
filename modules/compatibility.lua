@@ -12,7 +12,7 @@ function Compatibility.increase(amt)
 end 
 
 function Compatibility.decrease(amt)
-	Compatibility.value = Compatibility.value + amt
+	Compatibility.value = Compatibility.value - amt
 	-- end game immediately / timer = 0 when comp = -2 
 	-- Compatibility.check()
 end
