@@ -13,7 +13,7 @@ Dialogue.New("Tree_1_Green_8", "Lorelai", 2, "Yeah. I'm actually a Radio Televis
 Red_1 = Tree.new({
 	Stem.new("Douglass", Douglass_Talk, "So uh, are- are you also a neuroscience major too? Or like pre-med?", nil),
 	Stem.new("Lorelai", Lorelai_Concerned, "Oh. No, haha. I'm a Radio Television Film major. I'm minoring in Chem.", nil),
-	Stem.new("Douglass", Douglass_Talk, "Oh, really? Wow, that uh- that's pretty cool. I mean I watch a lot of movies. And films.", nil),
+	Stem.new("Douglass", Douglass_Awkward, "Oh, really? Wow, that uh- that's pretty cool. I mean I watch a lot of movies. And films.", nil),
 }, Choice_2)
 
 Green_1 = Tree.new({
@@ -25,12 +25,12 @@ Green_1 = Tree.new({
 	Stem.new("Lorelai", Lorelai_Talk, "That's actually really cool. I would say I do a lot of creative stuff too.", nil),
 	Stem.new("Douglass", Douglass_Talk, "Really?", nil),
 	Stem.new("Lorelai", Lorelai_Talk, "Yeah. I'm actually a Radio Television Film major. So I do a lot of SFX makeup for films.", nil),
-	Stem.new("Douglass", Douglass_Talk, "Oh, really? Wow, that uh- that's pretty cool. I mean I watch a lot of movies. And films.", nil),
+	Stem.new("Douglass", Douglass_Awkward, "Oh, really? Wow, that uh- that's pretty cool. I mean I watch a lot of movies. And films.", nil),
 }, Choice_2)
 
 No_1 = Tree.new({
 	Stem.new("Lorelai", Lorelai_Dissapointed, "..Uh.. Well. What do you like to do?", nil),
 	Stem.new("Douglass", Douglass_Talk, "Oh! Well.. I uh.. I like chemistry. I'm a neuroscience major.", nil),
 	Stem.new("Lorelai", Lorelai_Talk, "Cool. I'm a Radio Television Film major. I'm minoring in Chem.", nil),
-	Stem.new("Douglass", Douglass_Talk, "Oh, really? Wow, that uh- that's pretty cool. I mean I watch a lot of movies. And films.", nil),
+	Stem.new("Douglass", Douglass_Awkward, "Oh, really? Wow, that uh- that's pretty cool. I mean I watch a lot of movies. And films.", nil),
 },Choice_2)

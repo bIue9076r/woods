@@ -70,14 +70,16 @@ Sound.new("Lorelai_Laughter","/Assets/lorelai-laughter.mp3","static")
 -- Emotions
 Lorelai_Normal = 1
 Lorelai_Talk = 2
+Lorelai_Happy = 3
+Lorelai_Angry = 4
 Lorelai_Dissapointed = 5
 Lorelai_Concerned = 6
-Lorelai_Happy = 3
 Lorelai_Flirty = 7
-Lorelai_Angry = 4
 
 Douglass_Normal = 1
 Douglass_Talk = 2
-Douglass_Awkward = 6
-Douglass_SideEye = 1
+Douglass_Happy = 3
+Douglass_Hand = 4
 Douglass_Annoyed = 5
+Douglass_Awkward = 6
+Douglass_SideEye = 7

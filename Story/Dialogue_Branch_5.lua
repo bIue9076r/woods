@@ -44,11 +44,11 @@ Dialogue.New("Doug5_1_5_2_9_5", "Lorelai", 1, "Take the compliment.", 60, "Doug5
 Dialogue.New("Doug5_1_5_2_9_6", "Douglass", 1, "Okay.", 60, "Doug6_1")
 
 Red_5 = Tree.new({
-	Stem.new("Douglass", Douglass_Talk, "No- no. I go out.", nil),
+	Stem.new("Douglass", Douglass_SideEye, "No- no. I go out.", nil),
 	Stem.new("Lorelai", Lorelai_Talk, "Yeah.", nil),
 	Stem.new("Douglass", Douglass_Talk, "Yeah.", nil),
 	Stem.new("Lorelai", Lorelai_Talk, "Where? Like parties?", nil),
-	Stem.new("Douglass", Douglass_Talk, "Oh. Oh yeah. I love parties. And drinking.", nil),
+	Stem.new("Douglass", Douglass_Awkward, "Oh. Oh yeah. I love parties. And drinking.", nil),
 	Stem.new("Lorelai", Lorelai_Talk, "Wow, okay. Underestimated you.", nil),
 	Stem.new("Lorelai", Lorelai_Talk, "What was the last frat party you went to?", nil),
 },Choice_5_Red)
@@ -57,7 +57,7 @@ Red_5_Branch_1 = Tree.new({
 	Stem.new("Douglass", Douglass_Talk, "I went to Sigma Chi", nil),
 	Stem.new("Lorelai", Lorelai_Talk, "Are you serious? That's a hard party to get into", nil),
 	Stem.new("Lorelai", Lorelai_Talk, "For guys anyways.", nil),
-	Stem.new("Douglass", Douglass_Talk, "Yeah.. yeah. I uh.. knew a brother.", nil),
+	Stem.new("Douglass", Douglass_Awkward, "Yeah.. yeah. I uh.. knew a brother.", nil),
 	Stem.new("Lorelai", Lorelai_Talk, "Wow, alright party animal!", nil),
 	Stem.new("Lorelai", Lorelai_Talk, "Save some play for me, damn.", nil),
 	Stem.new("Lorelai", Lorelai_Talk, "I guess for me, I like having a balance, you know?",nil),
@@ -68,11 +68,11 @@ Red_5_Branch_1 = Tree.new({
 
 Red_5_Branch_2 = Tree.new({
 	Stem.new("Douglass", Douglass_Talk, "(insert fake frat name)", nil),
-	Stem.new("Lorelai", Lorelai_Talk, "Dude. That's not even a real frat.", nil),
-	Stem.new("Douglass", Douglass_Talk, "It's... not?", nil),
-	Stem.new("Lorelai", Lorelai_Talk, "No.", nil),
+	Stem.new("Lorelai", Lorelai_Dissapointed, "Dude. That's not even a real frat.", nil),
+	Stem.new("Douglass", Douglass_SideEye, "It's... not?", nil),
+	Stem.new("Lorelai", Lorelai_Concerned, "No.", nil),
 	Stem.new("Douglass", Douglass_Talk, "I swear it was.", nil),
-	Stem.new("Lorelai", Lorelai_Talk, "Yeah. Alright..", nil),
+	Stem.new("Lorelai", Lorelai_Concerned, "Yeah. Alright..", nil),
 	Stem.new("Lorelai", Lorelai_Talk, "I guess for me, I like having a balance, you know?",nil),
 	Stem.new("Lorelai", Lorelai_Talk, "Going out, staying in, studying..",nil),
 	Stem.new("Lorelai", Lorelai_Talk, "I like doing all of it really.",nil),
@@ -81,11 +81,11 @@ Red_5_Branch_2 = Tree.new({
 
 Red_5_Branch_3 = Tree.new({
 	Stem.new("Douglass", Douglass_Talk, "(insert fake frat name)", nil),
-	Stem.new("Lorelai", Lorelai_Talk, "Dude. That's not even a real frat.", nil),
-	Stem.new("Douglass", Douglass_Talk, "It's... not?", nil),
-	Stem.new("Lorelai", Lorelai_Talk, "No.", nil),
+	Stem.new("Lorelai", Lorelai_Dissapointed, "Dude. That's not even a real frat.", nil),
+	Stem.new("Douglass", Douglass_SideEye, "It's... not?", nil),
+	Stem.new("Lorelai", Lorelai_Concerned, "No.", nil),
 	Stem.new("Douglass", Douglass_Talk, "I swear it was.", nil),
-	Stem.new("Lorelai", Lorelai_Talk, "Yeah. Alright..", nil),
+	Stem.new("Lorelai", Lorelai_Concerned, "Yeah. Alright..", nil),
 	Stem.new("Lorelai", Lorelai_Talk, "I guess for me, I like having a balance, you know?",nil),
 	Stem.new("Lorelai", Lorelai_Talk, "Going out, staying in, studying..",nil),
 	Stem.new("Lorelai", Lorelai_Talk, "I like doing all of it really.",nil),
@@ -94,11 +94,11 @@ Red_5_Branch_3 = Tree.new({
 
 Red_5_Branch_4 = Tree.new({
 	Stem.new("Douglass", Douglass_Talk, "(insert fake frat name)", nil),
-	Stem.new("Lorelai", Lorelai_Talk, "Dude. That's not even a real frat.", nil),
-	Stem.new("Douglass", Douglass_Talk, "It's... not?", nil),
-	Stem.new("Lorelai", Lorelai_Talk, "No.", nil),
+	Stem.new("Lorelai", Lorelai_Dissapointed, "Dude. That's not even a real frat.", nil),
+	Stem.new("Douglass", Douglass_SideEye, "It's... not?", nil),
+	Stem.new("Lorelai", Lorelai_Concerned, "No.", nil),
 	Stem.new("Douglass", Douglass_Talk, "I swear it was.", nil),
-	Stem.new("Lorelai", Lorelai_Talk, "Yeah. Alright..", nil),
+	Stem.new("Lorelai", Lorelai_Concerned, "Yeah. Alright..", nil),
 	Stem.new("Lorelai", Lorelai_Talk, "I guess for me, I like having a balance, you know?",nil),
 	Stem.new("Lorelai", Lorelai_Talk, "Going out, staying in, studying..",nil),
 	Stem.new("Lorelai", Lorelai_Talk, "I like doing all of it really.",nil),
@@ -106,10 +106,10 @@ Red_5_Branch_4 = Tree.new({
 },Choice_6)
 
 Green_5 = Tree.new({
-	Stem.new("Douglass", Douglass_Talk, "Yeah.. I mean.. I don't really go out a lot.", nil),
+	Stem.new("Douglass", Douglass_Awkward, "Yeah.. I mean.. I don't really go out a lot.", nil),
 	Stem.new("Douglass", Douglass_Talk, "I like staying inside most of the time.", nil),
 	Stem.new("Lorelai", Lorelai_Talk, "Doing what?", nil),
-	Stem.new("Douglass", Douglass_Talk, "I uh.. like reading comics. I guess. And movies.", nil),
+	Stem.new("Douglass", Douglass_SideEye, "I uh.. like reading comics. I guess. And movies.", nil),
 	Stem.new("Douglass", Douglass_Talk, "We already talked about movies though so.", nil),
 	Stem.new("Lorelai", Lorelai_Talk, "Honestly I respect someone who knows what they like.", nil),
 	Stem.new("Lorelai", Lorelai_Talk, "I'm sure you're having just as much fun", nil),
@@ -122,10 +122,10 @@ Green_5 = Tree.new({
 },Choice_6)
 
 Green_5_Alt = Tree.new({
-	Stem.new("Douglass", Douglass_Talk, "Yeah.. I mean.. I don't really go out a lot.", nil),
+	Stem.new("Douglass", Douglass_Awkward, "Yeah.. I mean.. I don't really go out a lot.", nil),
 	Stem.new("Douglass", Douglass_Talk, "I like staying inside most of the time.", nil),
 	Stem.new("Lorelai", Lorelai_Talk, "Doing what?", nil),
-	Stem.new("Douglass", Douglass_Talk, "I uh.. like reading comics. I guess. And movies.", nil),
+	Stem.new("Douglass", Douglass_SideEye, "I uh.. like reading comics. I guess. And movies.", nil),
 	Stem.new("Douglass", Douglass_Talk, "We already talked about movies though so.", nil),
 	Stem.new("Lorelai", Lorelai_Talk, "Honestly I respect someone who knows what they like.", nil),
 	Stem.new("Lorelai", Lorelai_Talk, "I'm sure you're having just as much fun", nil),
@@ -133,10 +133,10 @@ Green_5_Alt = Tree.new({
 	Stem.new("Douglass", Douglass_Talk, "Yeah.. Honestly I kinda am. Comics are cool.", nil),
 	Stem.new("Lorelai", Lorelai_Talk, "You're cool.", nil),
 	Stem.new("Douglass", Douglass_Talk, "I'm- I'm cool?", nil),
-	Stem.new("Lorelai", Lorelai_Talk, "Yeah.", nil),
+	Stem.new("Lorelai", Lorelai_Flirty, "Yeah.", nil),
 	Stem.new("Douglass", Douglass_Talk, "Really?", nil),
 	Stem.new("Lorelai", Lorelai_Talk, "Take the compliment.", nil),
-	Stem.new("Douglass", Douglass_Talk, "Okay.", nil),
+	Stem.new("Douglass", Douglass_Happy, "Okay.", nil),
 	Stem.new("Lorelai", Lorelai_Talk, "I guess for me, I like having a balance, you know?",nil),
 	Stem.new("Lorelai", Lorelai_Talk, "Going out, staying in, studying..",nil),
 	Stem.new("Lorelai", Lorelai_Talk, "I like doing all of it really.",nil),
@@ -144,11 +144,11 @@ Green_5_Alt = Tree.new({
 },Choice_6)
 
 No_5 = Tree.new({
-	Stem.new("Lorelai", Lorelai_Talk, "..Uh.. Doug?", nil),
-	Stem.new("Douglass", Douglass_Talk, "..Oh sorry. What'd you say?", nil),
+	Stem.new("Lorelai", Lorelai_Concerned, "..Uh.. Doug?", nil),
+	Stem.new("Douglass", Douglass_SideEye, "..Oh sorry. What'd you say?", nil),
 	Stem.new("Lorelai", Lorelai_Talk, "You stay in a lot?", nil),
-	Stem.new("Douglass", Douglass_Talk, "Yeah.", nil),
-	Stem.new("Lorelai", Lorelai_Talk, "Cool..", nil),
+	Stem.new("Douglass", Douglass_Awkward, "Yeah.", nil),
+	Stem.new("Lorelai", Lorelai_Concerned, "Cool..", nil),
 	Stem.new("Lorelai", Lorelai_Talk, "I guess for me, I like having a balance, you know?",nil),
 	Stem.new("Lorelai", Lorelai_Talk, "Going out, staying in, studying..",nil),
 	Stem.new("Lorelai", Lorelai_Talk, "I like doing all of it really.",nil),
