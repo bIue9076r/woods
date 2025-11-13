@@ -3,6 +3,7 @@
 
 Button_1 = Button.new(50,300,143,59,"button")
 Button_2 = Button.new(50,370,143,59,"quit")
+--Button_3
 
 function Intro_Load()
 	
