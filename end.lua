@@ -50,7 +50,7 @@ end
 
 function End_Update(dt)
 	if Scroll_T <= 1 then
-		Credits = [[
+		Credits = "Your Attraction: "..Compatibility.value..[[
 
 Kairos Koffee
 
@@ -89,7 +89,7 @@ Sound Effects (douglass-huh, lorelai-gasp, crowd-shocked, applause-crowd, lorela
 
 Thanks for Playing!
 
-]].."Your Attraction: "..Compatibility.value
+]]
 	end
 	Scroll_T = Scroll_T + 2*dt
 

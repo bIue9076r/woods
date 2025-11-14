@@ -1,9 +1,9 @@
 -- Intro State
 -- Start of the game / Main Menu
 
-Button_1 = Button.new(50,300,143,59,"button")
-Button_2 = Button.new(50,370,143,59,"quit")
---Button_3
+Button_1 = Button.new(50,230,143,59,"button")
+Button_2 = Button.new(50,300,143,59,"settings")
+Button_3 = Button.new(50,370,143,59,"quit")
 
 function Intro_Load()
 	
@@ -15,6 +15,7 @@ function Intro_Update(dt)
 	
 	Button_1:focus(x,y)
 	Button_2:focus(x,y)
+	Button_3:focus(x,y)
 end
 
 function Intro_Mousepressed(x,y,button)
@@ -24,7 +25,7 @@ function Intro_Mousepressed(x,y,button)
 		sound = Sound.get("Yeep")
 	end
 
-	if Button_2:click(x,y,button) then
+	if Button_3:click(x,y,button) then
 		love.event.quit()
 	end
 
@@ -54,4 +55,5 @@ function Intro_Draw()
 
 	Button_1:draw()
 	Button_2:draw()
+	Button_3:draw()
 end
