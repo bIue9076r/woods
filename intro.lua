@@ -25,6 +25,11 @@ function Intro_Mousepressed(x,y,button)
 		sound = Sound.get("Yeep")
 	end
 
+	if Button_2:click(x,y,button) then
+		--Gamestate = "Settings"
+		sound = Sound.get("Yeep")
+	end
+
 	if Button_3:click(x,y,button) then
 		love.event.quit()
 	end
