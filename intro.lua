@@ -26,7 +26,7 @@ function Intro_Mousepressed(x,y,button)
 	end
 
 	if Button_2:click(x,y,button) then
-		--Gamestate = "Settings"
+		Gamestate = "Settings"
 		sound = Sound.get("Yeep")
 	end
 

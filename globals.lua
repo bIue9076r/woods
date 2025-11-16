@@ -18,6 +18,7 @@ require("dialogue")
 require("response")
 
 require("intro")
+require("settings")
 require("cutscene")
 require("end")
 
@@ -32,6 +33,7 @@ love.audio.setVolume(Main_Volume)
 
 Load_States = {
 	["Intro"] = Intro_Load,
+	["Settings"] = Settings_Load,
 	["Cutscene"] = Cutscene_Load,
 	["Dialogue"] = nil,
 	["Response"] = nil,
@@ -40,6 +42,7 @@ Load_States = {
 
 Update_States = {
 	["Intro"] = Intro_Update,
+	["Settings"] = Settings_Update,
 	["Cutscene"] = Cutscene_Update,
 	["Dialogue"] = Dialogue.Updating,
 	["Response"] = Response.Updating,
@@ -48,6 +51,7 @@ Update_States = {
 
 Mousepressed_States = {
 	["Intro"] = Intro_Mousepressed,
+	["Settings"] = Settings_Mousepressed,
 	["Cutscene"] = Cutscene_Mousepressed,
 	["Dialogue"] = Dialogue.Mousepressed,
 	["Response"] = Response.Mousepressed,
@@ -56,6 +60,7 @@ Mousepressed_States = {
 
 Keypressed_States = {
 	["Intro"] = Intro_Keypressed,
+	["Settings"] = Settings_Keypressed,
 	["Cutscene"] = Cutscene_Keypressed,
 	["Dialogue"] = Dialogue.Keypressed,
 	["Response"] = Response.Keypressed,
@@ -64,6 +69,7 @@ Keypressed_States = {
 
 Draw_States = {
 	["Intro"] = Intro_Draw,
+	["Settings"] = Settings_Draw,
 	["Cutscene"] = Cutscene_Draw,
 	["Dialogue"] = Dialogue.Draw,
 	["Response"] = Response.Draw,

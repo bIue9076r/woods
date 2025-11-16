@@ -17,7 +17,7 @@ function love.update(dt)
 	--end
 
 	if Timer.global < 300 then
-		if not((Gamestate == "Intro") or (Gamestate == "Cutscene") or (Gamestate == "End")) then
+		if not((Gamestate == "Intro") or (Gamestate == "Settings") or (Gamestate == "Cutscene") or (Gamestate == "End")) then
 			Timer.show = true
 			Timer.global = Timer.global + dt
 		end
