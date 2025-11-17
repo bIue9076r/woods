@@ -20,11 +20,14 @@ function Settings_Mousepressed(x,y,button)
 end
 
 function Settings_Keypressed(key)
-
+	local back_sound = Sound.get("Sett")
+	back_sound:seek(0)
+	back_sound:stop()
+	Gamestate = "Intro"
 end
 
 function Settings_Draw()
-	local back_sound = Sound.get("Back")
+	local back_sound = Sound.get("Sett")
 	if back_sound and not (back_sound:isPlaying()) then
 		back_sound:setVolume(Music_Volume)
 		back_sound:seek(0)

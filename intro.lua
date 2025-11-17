@@ -28,6 +28,9 @@ function Intro_Mousepressed(x,y,button)
 	if Button_2:click(x,y,button) then
 		Gamestate = "Settings"
 		sound = Sound.get("Yeep")
+		local back_sound = Sound.get("Back")
+		back_sound:seek(0)
+		back_sound:stop()
 	end
 
 	if Button_3:click(x,y,button) then
