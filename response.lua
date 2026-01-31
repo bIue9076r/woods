@@ -112,7 +112,7 @@ function Response.Draw()
 		img = Image.get(entry.char.."_"..entry.mood)
 		love.graphics.draw(img,0,0)
 
-		local n = math.ceil(6 * (Timer.choice_time/7))
+		local n = math.ceil(6 * (Timer.choice_time/Timer.choice_max))
 		img = Image.get("Timer_"..n)
 		love.graphics.draw(img,0,0)
 

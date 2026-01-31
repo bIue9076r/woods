@@ -16,7 +16,7 @@ function love.update(dt)
 	--	love.timer.sleep(1/30 - dt)
 	--end
 
-	if Timer.global < 300 then
+	if Timer.global < Timer.global_max then
 		if not((Gamestate == "Intro") or (Gamestate == "Settings") or (Gamestate == "Cutscene") or (Gamestate == "End")) then
 			Timer.show = true
 			Timer.global = Timer.global + dt
@@ -37,7 +37,7 @@ function love.draw()
 	if f then f() end
 	
 	if Timer.show then
-		local Tg = math.ceil(300 - Timer.global)
+		local Tg = math.ceil(Timer.global_max - Timer.global)
 		local s = Tg % 60
 		if s < 10 then s = "0"..s end
 		local m = math.floor(Tg / 60) % 60

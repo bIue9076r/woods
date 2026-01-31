@@ -5,6 +5,7 @@ Timer.choice_max = 7		-- Max time per choice (10 seconds)
 Timer.started = false;
 
 Timer.global = 0;
+Timer.global_max = math.ceil(Timer.choice_max * 42.8);
 Timer.show = false
 
 function Timer.init() -- Call in globals.lua ?
